@@ -1,0 +1,120 @@
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+span {
+    font-weight: 700;
+}
+
+iframe {
+    width: 700px;
+    height: 600px;
+}
+
+button h4 {
+    font-size: 2.5rem;
+}
+
+/* NAVBAR */
+.navbar {
+    font-size: 3rem;
+}
+
+.navbar-toggler {
+    font-size: 3.5rem;
+}
+
+.banner {
+    right: 20%;
+}
+
+/* FIN NAVBAR */
+
+.marcoFoto {
+    max-width: 400px;
+}
+
+/*** MAIN ***/
+.contenedor {
+    position: relative;
+    margin: 150px auto;
+    max-width: 90%;
+}
+
+
+
+/* PRIMERA SECTION */
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.secciones h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.secciones h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.secciones p {
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+.imgAside {
+    width: 650px;
+    height: auto;
+
+}
+
+/* FIN SECTION */
+
+/* SEGUNDA SECTION  */
+
+
+.card-text {
+    font-size: 2.3rem;
+}
+
+.card h5 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.background {
+    border-radius: 5rem;
+    background-color: hsla(0, 0%, 72%, 0.24);
+}
+.subTitulo {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.tarjeta-globo {
+    box-shadow: 0px 10px 30px 30px rgba(92, 92, 92, 0.479);
+}
+
+/* FIN SECTION */
+
+/* @media (min-width:1200px) {
+    iframe {
+        width: 900px;
+        height: 600px;
+    }
+} */
