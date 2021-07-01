@@ -40,6 +40,7 @@ button h4 {
 
 .marcoFoto {
     max-width: 400px;
+    text-align: center;
 }
 
 /*** MAIN ***/
@@ -76,12 +77,19 @@ button h4 {
     font-size: 2.5rem;
     line-height: 2;
 }
+.pieFotoAutora div{
+    padding: 0;
+}
+.pieFotoAutora div p{
+    font-size: 2rem;
+}
 
 .imgAside {
     width: 650px;
     height: auto;
 
 }
+
 
 /* FIN SECTION */
 
