@@ -7,9 +7,6 @@ main {
     background: rgb(255, 255, 255);
 }
 
-
-
-
 span {
     font-weight: 700;
 }
@@ -119,10 +116,3 @@ button h4 {
 }
 
 /* FIN SECTION */
-
-/* @media (min-width:1200px) {
-    iframe {
-        width: 900px;
-        height: 600px;
-    }
-} */
