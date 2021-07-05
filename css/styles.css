@@ -29,8 +29,28 @@ button h4 {
     font-size: 3.5rem;
 }
 
+.dropdown-item{
+    font-size: 3rem;
+}
 .banner {
     right: 20%;
+}
+
+#banner-img{
+    min-width: 20rem;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/BannerEN.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+#banner-img:hover{
+    background-image: url('../img/BannerJAP.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
 }
 
 /* FIN NAVBAR */
