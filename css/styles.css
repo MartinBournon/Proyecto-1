@@ -29,14 +29,15 @@ button h4 {
     font-size: 3.5rem;
 }
 
-.dropdown-item{
+.dropdown-item {
     font-size: 3rem;
 }
+
 .banner {
     right: 20%;
 }
 
-#banner-img{
+#banner-img {
     min-width: 20rem;
     min-height: 20rem;
     background-repeat: no-repeat;
@@ -46,7 +47,7 @@ button h4 {
     transition-delay: 100ms;
 }
 
-#banner-img:hover{
+#banner-img:hover {
     background-image: url('../img/BannerJAP.png');
     background-size: contain;
     transition-duration: 700ms;
@@ -66,6 +67,38 @@ button h4 {
     margin: 150px auto;
     max-width: 90%;
 }
+
+/* MODAL */
+.modal-dialog {
+    margin: 15% auto;
+}
+
+.modal-content {
+    background-color: hsla(0, 0%, 72%, 1);
+    /* box-shadow: 20px 20px 20px 20px rgb(92, 92, 92); */
+    border-radius: 5%;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-footer button {
+    font-size: 25px;
+}
+
+/* FIN MODAL */
 
 
 
@@ -94,10 +127,12 @@ button h4 {
     font-size: 2.5rem;
     line-height: 2;
 }
-.pieFotoAutora div{
+
+.pieFotoAutora div {
     padding: 0;
 }
-.pieFotoAutora div p{
+
+.pieFotoAutora div p {
     font-size: 2rem;
 }
 
@@ -126,6 +161,7 @@ button h4 {
     border-radius: 5rem;
     background-color: hsla(0, 0%, 72%, 0.24);
 }
+
 .subTitulo {
     text-align: center;
     font-size: 4rem;
