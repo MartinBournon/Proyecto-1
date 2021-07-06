@@ -26,11 +26,11 @@ button h4 {
 }
 
 .navbar-toggler {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .dropdown-item {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .banner {
@@ -97,7 +97,7 @@ button h4 {
 }
 
 .modal-footer button {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 /* FIN MODAL */
@@ -113,7 +113,7 @@ button h4 {
 }
 
 .secciones h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -126,7 +126,7 @@ button h4 {
 }
 
 .secciones p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 2;
 }
 
