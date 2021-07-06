@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,10 +28,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Noticias</a>
+                        <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Videos</a>
+                        <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -39,25 +39,29 @@
                             Personajes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Principales</a></li>
-                            <li><a class="dropdown-item" href="#">Pilares</a></li>
-                            <li><a class="dropdown-item" href="#">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Merchandising</a>
+                        <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-lg-0">
+                <!-- <ul class="navbar-nav mb-lg-0 d-sm-none d-xl-block">
+                    <li class="banner nav-link">
                     <li class="banner d-sm-flex justify-content-sm-end d-xxl-flex position-fixed">
                         <a href="./index.html">
                             <div id="banner-img"></div>
-                            <!-- <img id="banner-img" src="" alt=""> -->
                         </a>
                     </li>
-                </ul>
-                <ul class="navbar-nav mb-lg-0">
+                </ul> -->
+                <ul class="navbar-nav mb-lg-0 mr-5">
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-light mt-sm-5 mt-md-0 " data-bs-toggle="modal"
                             data-bs-target="#modalLogin">
@@ -65,6 +69,11 @@
                         </button>
                     </li>
                 </ul>
+            </div>
+            <div class="banner">
+                <a href="./index.html">
+                    <div id="banner-img"></div>
+                </a>
             </div>
         </nav>
     </header>

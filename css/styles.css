@@ -34,12 +34,14 @@ button h4 {
 }
 
 .banner {
-    right: 20%;
+    position: absolute;
+    right: 0%;
+    top: 80%;
 }
 
 #banner-img {
-    min-width: 20rem;
-    min-height: 20rem;
+    min-width: 15rem;
+    min-height: 15rem;
     background-repeat: no-repeat;
     background-image: url('../img/BannerEN.png');
     background-size: contain;
