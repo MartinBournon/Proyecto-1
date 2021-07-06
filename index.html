@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,10 +28,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Noticias</a>
+                        <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Videos</a>
+                        <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -39,24 +39,29 @@
                             Personajes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Principales</a></li>
-                            <li><a class="dropdown-item" href="#">Pilares</a></li>
-                            <li><a class="dropdown-item" href="#">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Merchandising</a>
+                        <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-lg-0">
-                    <li class="banner d-sm-none d-xxl-flex position-fixed">
+                <!-- <ul class="navbar-nav mb-lg-0 d-sm-none d-xl-block">
+                    <li class="banner nav-link">
+                    <li class="banner d-sm-flex justify-content-sm-end d-xxl-flex position-fixed">
                         <a href="./index.html">
-                            <img src="./img/BannerEN.png" alt="">
+                            <div id="banner-img"></div>
                         </a>
                     </li>
-                </ul>
-                <ul class="navbar-nav mb-lg-0">
+                </ul> -->
+                <ul class="navbar-nav mb-lg-0 mr-5">
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-light mt-sm-5 mt-md-0 " data-bs-toggle="modal"
                             data-bs-target="#modalLogin">
@@ -65,17 +70,45 @@
                     </li>
                 </ul>
             </div>
+            <div class="banner">
+                <a href="./index.html">
+                    <div id="banner-img"></div>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main class="contenedor">
 
+        <div class="modal" id="modalLogin" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="d-flex flex-column p-3">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" id="usuario" name="usuario">
+                                <label for="contraseña">Contraseña</label>
+                                <input type="password" id="contraseña" name="contraseña">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="mb-4 d-flex flex-row-reverse justify-content-between">
             <div class="shadow-lg p-5 mb-5 background container-fluid m-3 p-3">
                 <section>
                     <div class="secciones">
-                        <h1>Kimetsu no Yaiba</h1>                                                                                    
+                        <h1>Kimetsu no Yaiba</h1>
                         <p>
                             También conocida como <span>Demon Slayer</span>, es un manga escrito e ilustrado por
                             Koyoharu
@@ -97,7 +130,7 @@
                             volverse humana nuevamente y vengar la muerte de su familia.
                         </p>
                     </div>
-                </section>                
+                </section>
                 <section>
                     <div class="secciones">
                         <h2>Mira el trailer</h2>
@@ -117,19 +150,21 @@
                                 </div>
                                 <div class="col-sm-12 pieFotoAutora">
                                     <div class="card-body m-0">
-                                        <p class="card-text text-center">No se conocen fotos de la autora, pero utiliza ésta imagen para representarse</p>
+                                        <p class="card-text text-center">No se conocen fotos de la autora, pero utiliza
+                                            ésta imagen para representarse</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-5">Se conocen pocos detalles sobre la vida de la autora, más allá de que procede de la
+                        <p class="mt-5">Se conocen pocos detalles sobre la vida de la autora, más allá de que procede de
+                            la
                             prefectura de Fukuoka. Aunque en sus páginas de presentación no hace mención a su género y
                             solo utiliza pronombres neutros, se ha revelado por otras fuentes que Gotouge es una
                             mujer
 
                             Debutó como autora en 2013 a través de un concurso para jóvenes talentos de la editorial
                             Shūeisha, del que resultó vencedora con la obra Kagarigari. Posteriormente publicó
-                            tres historias autoconclusivas: Monju Shirō Kyōdai  para Jump Next! en 2014,
+                            tres historias autoconclusivas: Monju Shirō Kyōdai para Jump Next! en 2014,
                             Rokkotsu-san para la Weekly Shōnen Jump en 2014, y Haeniwa no Zigzag para
                             la misma revista en 2015​ Ninguna de ellas fue aceptada por Shūeisha como serie regular,
                             por lo que su primer editor, Tatsuhiko Katayama, le sugirió crear otras obras con tramas más
