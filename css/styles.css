@@ -1,0 +1,195 @@
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    background: rgb(255, 255, 255);
+}
+
+span {
+    font-weight: 700;
+}
+
+iframe {
+    width: 700px;
+    height: 600px;
+}
+
+button h4 {
+    font-size: 2.5rem;
+}
+
+h1{    
+    font-size: 6rem;
+}
+
+/* NAVBAR */
+.navbar {
+    font-size: 3rem;
+}
+
+.navbar-toggler {
+    font-size: 3.5rem;
+}
+
+.dropdown-item {
+    font-size: 3rem;
+}
+
+.banner {
+    position: absolute;
+    right: 0%;
+    top: 80%;
+}
+
+#banner-img {
+    min-width: 15rem;
+    min-height: 15rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/BannerEN.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+#banner-img:hover {
+    background-image: url('../img/BannerJAP.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+/* FIN NAVBAR */
+
+.marcoFoto {
+    max-width: 400px;
+    text-align: center;
+}
+
+/*** MAIN ***/
+.contenedor {
+    position: relative;
+    margin: 150px auto;
+    max-width: 90%;
+}
+
+/* MODAL */
+.modal-dialog {
+    margin: 15% auto;
+}
+
+.modal-content {
+    background-color: hsla(0, 0%, 72%, 1);
+    /* box-shadow: 20px 20px 20px 20px rgb(92, 92, 92); */
+    border-radius: 5%;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-footer button {
+    font-size: 25px;
+}
+
+/* FIN MODAL */
+
+
+
+/* PRIMERA SECTION */
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.secciones h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.secciones h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.secciones p {
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+.pieFotoAutora div {
+    padding: 0;
+}
+
+.pieFotoAutora div p {
+    font-size: 2rem;
+}
+
+.imgAside {
+    width: 650px;
+    height: auto;
+
+}
+
+
+/* FIN SECTION */
+
+/* SEGUNDA SECTION  */
+
+
+.card-text {
+    font-size: 2.3rem;
+}
+
+.card h5 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.background {
+    border-radius: 5rem;
+    background-color: hsla(0, 0%, 72%, 0.24);
+}
+
+.subTitulo {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.tarjeta-globo {
+    box-shadow: 0px 10px 30px 30px rgba(92, 92, 92, 0.479);
+}
+
+/* FIN SECTION */
+
+.seccionPersonaje{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center;
+}
+
+.seccionPersonaje h1{
+    margin-bottom: 2rem;
+}
+
+.cardPersonaje .card{
+    background: transparent;
+    border: none;
+}
