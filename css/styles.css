@@ -11,6 +11,14 @@ span {
     font-weight: 700;
 }
 
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
 .videoTrailer {    
     width: 400px;
     height: 315px;
@@ -120,14 +128,12 @@ button h4 {
 }
 
 .secciones h1 {
-    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 
 .secciones h2 {
-    font-size: 3rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
@@ -182,3 +188,31 @@ button h4 {
 }
 
 /* FIN SECTION */
+
+.seccionPersonaje{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center;
+}
+
+.seccionPersonaje h2{
+    margin-bottom: 2rem;
+}
+
+.cardPersonaje .card{
+    background: transparent;
+    border: none;
+}
+
+.card img{
+    filter: grayscale(60%);
+    transition: .5s ease-in;
+}
+
+.card img:hover{
+    filter: grayscale(0%);
+}
+
+.logo{
+    width: 100px;
+}
