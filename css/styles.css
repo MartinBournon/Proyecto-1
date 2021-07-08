@@ -11,30 +11,32 @@ span {
     font-weight: 700;
 }
 
+.videoTrailer {    
+    width: 400px;
+    height: 315px;
+
+}
+
 iframe {
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }
 
 button h4 {
-    font-size: 2.5rem;
-}
-
-h1{    
-    font-size: 6rem;
+    font-size: 2rem;
 }
 
 /* NAVBAR */
 .navbar {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .navbar-toggler {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 .dropdown-item {
-    font-size: 3rem;
+    font-size: 1.6rem;
 }
 
 .banner {
@@ -44,8 +46,8 @@ h1{
 }
 
 #banner-img {
-    min-width: 15rem;
-    min-height: 15rem;
+    min-width: 10rem;
+    min-height: 10rem;
     background-repeat: no-repeat;
     background-image: url('../img/BannerEN.png');
     background-size: contain;
@@ -63,7 +65,7 @@ h1{
 /* FIN NAVBAR */
 
 .marcoFoto {
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -77,6 +79,7 @@ h1{
 /* MODAL */
 .modal-dialog {
     margin: 15% auto;
+    padding: 5rem;
 }
 
 .modal-content {
@@ -90,18 +93,18 @@ h1{
 }
 
 .modal-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 .modal-body {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
 
 .modal-footer button {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 /* FIN MODAL */
@@ -113,24 +116,24 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .secciones h1 {
-    text-align: center;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 
 .secciones h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .secciones p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2;
 }
 
@@ -139,12 +142,13 @@ h1{
 }
 
 .pieFotoAutora div p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .imgAside {
-    width: 650px;
+    width: 550px;
     height: auto;
+
 
 }
 
@@ -155,11 +159,11 @@ h1{
 
 
 .card-text {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
 }
 
 .card h5 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -178,18 +182,3 @@ h1{
 }
 
 /* FIN SECTION */
-
-.seccionPersonaje{
-    padding: 2rem;
-    margin: 3rem 2rem;
-    text-align: center;
-}
-
-.seccionPersonaje h1{
-    margin-bottom: 2rem;
-}
-
-.cardPersonaje .card{
-    background: transparent;
-    border: none;
-}
