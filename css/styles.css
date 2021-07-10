@@ -11,32 +11,69 @@ span {
     font-weight: 700;
 }
 
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.videoTrailer {    
+    width: 400px;
+    height: 315px;
+
+}
+
 iframe {
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }
 
 button h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* NAVBAR */
 .navbar {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .navbar-toggler {
-    font-size: 3.5rem;
+    font-size: 2rem;
+}
+
+.dropdown-item {
+    font-size: 1.6rem;
 }
 
 .banner {
-    right: 20%;
+    position: absolute;
+    right: 0%;
+    top: 80%;
+}
+
+#banner-img {
+    min-width: 10rem;
+    min-height: 10rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/BannerEN.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+#banner-img:hover {
+    background-image: url('../img/BannerJAP.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
 }
 
 /* FIN NAVBAR */
 
 .marcoFoto {
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -47,6 +84,39 @@ button h4 {
     max-width: 90%;
 }
 
+/* MODAL */
+.modal-dialog {
+    margin: 15% auto;
+    padding: 5rem;
+}
+
+.modal-content {
+    background-color: hsla(0, 0%, 72%, 1);
+    /* box-shadow: 20px 20px 20px 20px rgb(92, 92, 92); */
+    border-radius: 5%;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-footer button {
+    font-size: 2rem;
+}
+
+/* FIN MODAL */
+
 
 
 /* PRIMERA SECTION */
@@ -54,36 +124,37 @@ button h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .secciones h1 {
-    font-size: 6rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 
 .secciones h2 {
-    font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .secciones p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2;
 }
-.pieFotoAutora div{
+
+.pieFotoAutora div {
     padding: 0;
 }
-.pieFotoAutora div p{
-    font-size: 2rem;
+
+.pieFotoAutora div p {
+    font-size: 1.5rem;
 }
 
 .imgAside {
-    width: 650px;
+    width: 550px;
     height: auto;
+
 
 }
 
@@ -94,11 +165,11 @@ button h4 {
 
 
 .card-text {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
 }
 
 .card h5 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -106,6 +177,7 @@ button h4 {
     border-radius: 5rem;
     background-color: hsla(0, 0%, 72%, 0.24);
 }
+
 .subTitulo {
     text-align: center;
     font-size: 4rem;
@@ -116,3 +188,52 @@ button h4 {
 }
 
 /* FIN SECTION */
+
+.seccionPersonaje{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center;
+}
+
+.seccionPersonaje h2{
+    margin-bottom: 2rem;
+}
+
+.cardPersonaje .card{
+    background: transparent;
+    border: none;
+}
+
+.card img{
+    filter: grayscale(60%);
+    transition: .5s ease-in;
+}
+
+.card img:hover{
+    filter: grayscale(0%);
+}
+
+.logo{
+    width: 100px;
+}
+
+/* FOOTER */
+
+.page-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 48px 24px;
+    z-index: 9999;
+    position: relative;
+}
+
+.content-social{
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer-license {
+    border-top: 1px solid #eee;
+    margin: 50px 0 30px;
+    padding: 30px 0 0;
+}
