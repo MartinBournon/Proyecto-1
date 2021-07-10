@@ -19,56 +19,74 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Videos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Personajes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Principales</a></li>
-                                <li><a class="dropdown-item" href="#">Pilares</a></li>
-                                <li><a class="dropdown-item" href="#">Secundarios</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./Merchandising.html">Merchandising</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-outline-light mt-sm-5 mt-md-0">
-                                <h4>Login</h4>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                  <!--COMIENZO DE NAVBAR-->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Personajes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                    <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                    <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                    <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
+                  </ul>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
+                </li>
+              </ul>
+              <!-- <ul class="navbar-nav mb-lg-0 d-sm-none d-xl-block">
+                      <li class="banner nav-link">
+                      <li class="banner d-sm-flex justify-content-sm-end d-xxl-flex position-fixed">
+                          <a href="./index.html">
+                              <div id="banner-img"></div>
+                          </a>
+                      </li>
+                  </ul> -->
+              <ul class="navbar-nav mb-lg-0 mr-5">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-light mt-sm-5 mt-md-0 " data-bs-toggle="modal"
+                    data-bs-target="#modalLogin">
+                    <h4>Login</h4>
+                  </button>
+                </li>
+              </ul>
             </div>
-        </nav>
+            <div class="banner">
+              <a href="./index.html">
+                <div id="banner-img"></div>
+              </a>
+            </div>
+          </nav>
+          <!--FIN DE NAVBAR-->
     </header>
     <main>
         <!-- AQUI EMPIEZAN LAS CARDS DE FIGURAS DE PERSONAJES -->
-        <div class="merchandising-figuras">
-            <h3 class="text-center bg-danger p-2 m-2 container-center">Demon Slayer - Ediciones Limitadas</h3>
-            <div
-                class="contenedor-figuras d-flex flex-wrap row row-cols-1 row-cols-md-2 row-cols-lg-4 shadow-lg p-3 m-2 mb-2 bg-body rounded-3">
+        <section class="merchandising-figuras">
+            <h2 class="text-center bg-danger p-2 m-2 container-center">Figuras de coleccion</h2>
+            <div class="contenedor-figuras d-flex flex-wrap row row-cols-1 row-cols-md-2 row-cols-lg-4 shadow-lg p-3 m-2 mb-2 bg-body rounded-3">
                 <div class="card">
                     <img src="https://i.ibb.co/0r1Vnb7/61-Rl-Gfb-C0f-L-AC-SX425-1.jpg" class="card-img-top"
                         alt="Aniplex Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado Figura Deluxe Versión">
@@ -238,11 +256,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- AQUI TERMINAN LAS CARDS DE FIGURAS DE PERSONAJES -->
         </br>
         <!-- AQUI EMPIEZA EL SLIDER DE INDUMENTARIA Y OTROS -->
-        <div id="contenedor-slider" class="d-flex justify-content-center shadow-lg p-3 m-2 mb-2 bg-body rounded-3">
+        <section id="slider" class="d-flex flex-column">
+            <h2 class="text-center p-2 m-2 container-center">Merchandising de Demon Slayer</h2>
+            <div id="carousel-general" class="d-flex justify-content-center shadow-lg p-3 m-2 mb-2 bg-body rounded-3">
             <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -295,7 +315,8 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
+            </div>
+        </section>
         <!--PRUEBA DE CARRUSEL rev.03 ANTERIOR
             <div class="contenedorslider d-flex justify-content-center bg-danger" style="max-height: max-content;">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
