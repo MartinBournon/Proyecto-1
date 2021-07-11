@@ -158,7 +158,6 @@ button h4 {
 
 }
 
-
 /* FIN SECTION */
 
 /* SEGUNDA SECTION  */
@@ -217,6 +216,14 @@ button h4 {
     width: 100px;
 }
 
+/*NOTICIAS*/
+
+.noticias-text {
+    font-size: 1.7rem;
+}
+
+/*FIN DE NOTICIAS*/
+
 /* FOOTER */
 
 .page-footer {
@@ -237,4 +244,7 @@ button h4 {
     margin: 50px 0 30px;
     padding: 30px 0 0;
 }
+
+/* FIN DE FOOTER */
+
 
