@@ -216,20 +216,41 @@ button h4 {
     width: 100px;
 }
 
-/*NOTICIAS*/
+/*MERCHANDISING*/
 
-.noticias-text {
-    font-size: 1.7rem;
+.carousel-item > img{
+    min-height: 810px;
+    min-width: 810px;
 }
 
+#carouselExampleCaptions {
+    width: 45%;
+    align-self: center;
+}
+
+.carouseltotal{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center
+}
+
+/*FIN DE MERCHANDISING*/
 
 
-.seccionnoticias {
+/*NOTICIAS*/
+
+/*.noticias-text {
+    font-size: 1.7rem;
+}*/
+
+
+
+/*.seccionnoticias {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
-}
+}*/
 
 
 /*FIN DE NOTICIAS*/
