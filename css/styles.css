@@ -158,7 +158,6 @@ button h4 {
 
 }
 
-
 /* FIN SECTION */
 
 /* SEGUNDA SECTION  */
@@ -204,18 +203,57 @@ button h4 {
     border: none;
 }
 
-.card img{
+.cardPersonaje .card img{
     filter: grayscale(60%);
     transition: .5s ease-in;
 }
 
-.card img:hover{
+.cardPersonaje .card img:hover{
     filter: grayscale(0%);
 }
 
 .logo{
     width: 100px;
 }
+
+/*MERCHANDISING*/
+
+.carousel-item > img{
+    min-height: 810px;
+    min-width: 810px;
+}
+
+#carouselExampleCaptions {
+    width: 45%;
+    align-self: center;
+}
+
+.carouseltotal{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center
+}
+
+/*FIN DE MERCHANDISING*/
+
+
+/*NOTICIAS*/
+
+/*.noticias-text {
+    font-size: 1.7rem;
+}*/
+
+
+
+/*.seccionnoticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}*/
+
+
+/*FIN DE NOTICIAS*/
 
 /* FOOTER */
 
@@ -237,3 +275,7 @@ button h4 {
     margin: 50px 0 30px;
     padding: 30px 0 0;
 }
+
+/* FIN DE FOOTER */
+
+
