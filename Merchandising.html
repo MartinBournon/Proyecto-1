@@ -101,7 +101,7 @@
         <!-- AQUI EMPIEZAN LAS CARDS DE FIGURAS DE PERSONAJES -->
         <section class="seccionPersonaje background shadow-lg">
             <h2 class="text-center p-2 m-2 container-center">Figuras de coleccion</h2>
-            <div class=" d-flex flex-wrap row row-cols-1 row-cols-md-2 row-cols-lg-4 p-3 bg-transparent">
+            <div class=" d-flex flex-wrap row row-cols-1 row-cols-md-2 row-cols-xl-4 p-3 bg-transparent">
                 <div class="card">
                     <img src="https://i.ibb.co/0r1Vnb7/61-Rl-Gfb-C0f-L-AC-SX425-1.jpg" class="card-img-top"
                         alt="Aniplex Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado Figura Deluxe Versión">
@@ -121,20 +121,47 @@
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/800px-EBay_logo.svg.png"
                                 alt="Logo de ebay" height="30px"></a>
                     </div>
-                    <div class="article-votation">
-                        <form>
-                            <label for="options"> <span class="votation-title">¿Qué puntuación te
-                                    darías?</span></label></br>
-                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
-                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
-                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
-                            <label for="email">E-mail:</label>
-                            <input type="mail" id="email">
-                            <input type="button" id="votar" value="Votar" />
-                        </form>
-                        <div id="liste-votes"></div>
-                        <div id="count-votes"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¡Danos tu opinion!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Si a alguien se la recomendaras...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="article-votation">
+                                        <form>
+                                            <label for="options"> <span class="votation-title">¿Qué puntuación le
+                                                    darías?</span></label></br>
+                                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
+                                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
+                                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
+                                            <label for="email">E-mail:</label>
+                                            <input type="mail" id="email">
+                                            <input type="button" id="votar" value="Votar" />
+                                        </form>
+                                        <div id="liste-votes"></div>
+                                        <div id="count-votes"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Fin Modal -->
+
                 </div>
                 <div class="card">
                     <img src="https://i.ibb.co/SVBwDQR/s-l300-1.jpg" class="card-img-top"
@@ -142,11 +169,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Kimetsu No Yaiba Figura Agatsuma Zenitsu Estatuilla Anime
                             Demon
-                            Slayer</h5>
+                            Slayer - Premium Miniature</h5>
                         <p class="card-text">Demon Slayer: Figura 15 Cm Agatsuma Zenitsu
                             Estatuilla
                             Anime
-                            Demon Slayer Figura De Acción</p>
+                            Demon Slayer Figura De Acción. Importada de Japon en exclusiva.</p>
                         <a href="https://www.amazon.es/Kimetsu-Agatsuma-Zenitsu-Estatuilla-Juguetes/dp/B08CRTSF3K"
                             class="btn shadow p-2 p-md-3"><img class="amazon-logo"
                                 src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png"
@@ -156,20 +183,45 @@
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/800px-EBay_logo.svg.png"
                                 alt="Logo de ebay" height="30px"></a>
                     </div>
-                    <div class="article-votation">
-                        <form>
-                            <label for="options"> <span class="votation-title">¿Qué puntuación te
-                                    darías?</span></label></br>
-                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
-                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
-                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
-                            <label for="email">E-mail:</label>
-                            <input type="mail" id="email" />
-                            <input type="button" id="votar" value="Votar" />
-                        </form>
-                        <div id="liste-votes"></div>
-                        <div id="count-votes"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¡Danos tu opinion!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Si a alguien se la recomendaras...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="article-votation">
+                                        <form>
+                                            <label for="options"> <span class="votation-title">¿Qué puntuación le
+                                                    darías?</span></label></br>
+                                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
+                                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
+                                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
+                                            <label for="email">E-mail:</label>
+                                            <input type="mail" id="email">
+                                            <input type="button" id="votar" value="Votar" />
+                                        </form>
+                                        <div id="liste-votes"></div>
+                                        <div id="count-votes"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Fin Modal -->
                 </div>
                 <div class="card">
                     <img src="https://i.ibb.co/5xVwVnJ/41j-KYVLloy-L-AC-SX425-1.jpg" class="card-img-top"
@@ -189,20 +241,46 @@
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/800px-EBay_logo.svg.png"
                                 alt="Logo de ebay" height="30px"></a>
                     </div>
-                    <div class="article-votation">
-                        <form>
-                            <label for="options"> <span class="votation-title">¿Qué puntuación te
-                                    darías?</span></label></br>
-                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
-                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
-                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
-                            <label for="email">E-mail:</label>
-                            <input type="mail" id="email" />
-                            <input type="button" id="votar" value="Votar" />
-                        </form>
-                        <div id="liste-votes"></div>
-                        <div id="count-votes"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¡Danos tu opinion!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Si a alguien se la recomendaras...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="article-votation">
+                                        <form>
+                                            <label for="options"> <span class="votation-title">¿Qué puntuación le
+                                                    darías?</span></label></br>
+                                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
+                                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
+                                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
+                                            <label for="email">E-mail:</label>
+                                            <input type="mail" id="email">
+                                            <input type="button" id="votar" value="Votar" />
+                                        </form>
+                                        <div id="liste-votes"></div>
+                                        <div id="count-votes"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Fin Modal -->
                 </div>
                 <div class="card">
                     <img src="https://i.ibb.co/kJsWvfT/s-l500-1.jpg" class="card-img-top"
@@ -222,20 +300,46 @@
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/800px-EBay_logo.svg.png"
                                 alt="Logo de ebay" height="30px"></a>
                     </div>
-                    <div class="article-votation">
-                        <form>
-                            <label for="options"> <span class="votation-title">¿Qué puntuación te
-                                    darías?</span></label></br>
-                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
-                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
-                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
-                            <label for="email">E-mail:</label>
-                            <input type="mail" id="email" />
-                            <input type="button" id="votar" value="Votar" />
-                        </form>
-                        <div id="liste-votes"></div>
-                        <div id="count-votes"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¡Danos tu opinion!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Si a alguien se la recomendaras...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="article-votation">
+                                        <form>
+                                            <label for="options"> <span class="votation-title">¿Qué puntuación le
+                                                    darías?</span></label></br>
+                                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
+                                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
+                                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
+                                            <label for="email">E-mail:</label>
+                                            <input type="mail" id="email">
+                                            <input type="button" id="votar" value="Votar" />
+                                        </form>
+                                        <div id="liste-votes"></div>
+                                        <div id="count-votes"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Fin Modal -->
                 </div>
                 <div class="card">
                     <img src="https://i.ibb.co/gdCtNcT/s-rwerwer-1.jpg" class="card-img-top"
@@ -247,91 +351,117 @@
                             Nezuko Kamado PVC figure Toy Brinquedos Statue Collectible Toy Gift
                         </p>
                         <a href="https://www.amazon.es/Ylmnku-Versi%C3%B3n-Tanjirou-Juguetes-Kimetsu/dp/B097PRG4KS/ref=sr_1_28?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Demon+Slayer+Kimetsu+no+Yaiba+Kamado+Nezuko+PVC+Action+Figure&qid=1624828094&s=toys&sr=1-28"
-                            class="btn btn-secondary"><img class="amazon-logo"
+                            class="btn shadow p-2 p-md-3"><img class="amazon-logo"
                                 src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png"
                                 alt="Logo de amazon" height="30px"></a>
                         <a href="https://www.ebay.com/itm/174785572156?_trkparms=aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D20200818143230%26meid%3D3ca65390e665463aa71c15a2c16e64b2%26pid%3D101224%26rk%3D4%26rkt%3D5%26sd%3D393160765730%26itm%3D174785572156%26pmt%3D0%26noa%3D1%26pg%3D2047675%26algv%3DDefaultOrganic&_trksid=p2047675.c101224.m-1"
-                            class="btn btn-secondary"><img class="ebay-logo"
+                            class="btn shadow p-2 p-md-3"><img class="ebay-logo"
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/800px-EBay_logo.svg.png"
                                 alt="Logo de ebay" height="30px"></a>
                     </div>
-                    <div class="article-votation">
-                        <form>
-                            <label for="options"> <span class="votation-title">¿Qué puntuación te
-                                    darías?</span></label></br>
-                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
-                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
-                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
-                            <label for="email">E-mail:</label>
-                            <input type="mail" id="email" />
-                            <input type="button" id="votar" value="Votar" />
-                        </form>
-                        <div id="liste-votes"></div>
-                        <div id="count-votes"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ¡Danos tu opinion!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Si a alguien se la recomendaras...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="article-votation">
+                                        <form>
+                                            <label for="options"> <span class="votation-title">¿Qué puntuación le
+                                                    darías?</span></label></br>
+                                            <input type="radio" name="voto" value="1" /> 1 - Nunca la comprarías</br>
+                                            <input type="radio" name="voto" value="2" /> 2 - Está bastante buena</br>
+                                            <input type="radio" name="voto" value="3" /> 3 - Muy recomendable</br>
+                                            <label for="email">E-mail:</label>
+                                            <input type="mail" id="email">
+                                            <input type="button" id="votar" value="Votar" />
+                                        </form>
+                                        <div id="liste-votes"></div>
+                                        <div id="count-votes"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Fin Modal -->
                 </div>
             </div>
         </section>
         <!-- AQUI TERMINAN LAS CARDS DE FIGURAS DE PERSONAJES -->
         </br>
         <!-- AQUI EMPIEZA EL SLIDER DE INDUMENTARIA Y OTROS -->
-    <section class="carouseltotal shadow-lg rounded-10 background"> 
-        <h2 class="text-center p-2 m-2 container-center">Productos de Demon Slayer</h2>
-        <div id="slider" class="d-flex justify-content-center">
-            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner contenedor-carrousel">
-                    <div class="carousel-item active">
-                        <img src="https://i.ibb.co/kxFcvvx/01.jpg" class="d-block w-60" alt="pin">
-                        <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-                            <h4><a class="slide-link" aria-current="page"
-                                    href="https://articulo.mercadolibre.com.ar/MLA-863331726-pines-botones-anime-38-mm-con-prendedor-_JM?searchVariation=90262666439#searchVariation=90262666439&position=1&search_layout=stack&type=item&tracking_id=0c14a4e9-e6e1-4a88-81a3-cb4da8ad6482">
-                                    Pines Botones Anime</a></h4>
-                            <p>Pines Botones Anime 38 Mm Con Prendedor
-                            </p>
-                        </div>
+        <section class="carouseltotal shadow-lg rounded-10 background">
+            <h2 class="text-center p-2 m-2 container-center">Productos de Demon Slayer</h2>
+            <div id="slider" class="d-flex justify-content-center">
+                <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/0tmQmZg/02.jpg" class="d-block w-60" alt="buzo">
-                        <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-                            <h4><a class="slide-link" aria-current="page"
-                                    href="https://articulo.mercadolibre.com.ar/MLA-909113030-kimetsu-no-yaiba-buzo-canguro-hoodie-demon-slayer-anime-7-_JM?searchVariation=76693427685#searchVariation=76693427685&position=15&search_layout=stack&type=item&tracking_id=aac2cacf-fe22-4b6a-9d02-1f813536d290">
-                                    Buzo de Demon Slayer</a></h4>
-                            <p>Kimetsu No Yaiba - Buzo Canguro Hoodie Demon Slayer Anime 7
-                            </p>
+                    <div class="carousel-inner contenedor-carrousel">
+                        <div class="carousel-item active">
+                            <img src="https://i.ibb.co/kxFcvvx/01.jpg" class="d-block w-60" alt="pin">
+                            <div class="carousel-caption d-none d-md-block bg-white rounded-3">
+                                <h4><a class="slide-link" aria-current="page"
+                                        href="https://articulo.mercadolibre.com.ar/MLA-863331726-pines-botones-anime-38-mm-con-prendedor-_JM?searchVariation=90262666439#searchVariation=90262666439&position=1&search_layout=stack&type=item&tracking_id=0c14a4e9-e6e1-4a88-81a3-cb4da8ad6482">
+                                        Pines Botones Anime</a></h4>
+                                <p>Pines Botones Anime 38 Mm Con Prendedor
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/KrY5ZbY/sdfsdf.jpg" class="d-block w-60" alt="mousepad">
-                        <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-                            <h4><a class="slide-link" aria-current="page"
-                                    href="https://articulo.mercadolibre.com.ar/MLA-926866799-mousepad-personalizados-21x19-cm-demon-slayer-manga-anime-_JM#searchVariation=88939638205&position=9&search_layout=stack&type=pad&tracking_id=c36bb4cc-de51-4189-88a2-49e03a61ac73&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=9&ad_click_id=ZDRmNjZkMzgtYzI3MC00Yjk3LWI3OWYtZDUyMTJiOTc2MTg0">
-                                    Mousepad Demon Slayer</a></h4>
-                            <p>Mousepad Personalizados 21x19 Cm Demon Slayer Manga Anime
-                            </p>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/0tmQmZg/02.jpg" class="d-block w-60" alt="buzo">
+                            <div class="carousel-caption d-none d-md-block bg-white rounded-3">
+                                <h4><a class="slide-link" aria-current="page"
+                                        href="https://articulo.mercadolibre.com.ar/MLA-909113030-kimetsu-no-yaiba-buzo-canguro-hoodie-demon-slayer-anime-7-_JM?searchVariation=76693427685#searchVariation=76693427685&position=15&search_layout=stack&type=item&tracking_id=aac2cacf-fe22-4b6a-9d02-1f813536d290">
+                                        Buzo de Demon Slayer</a></h4>
+                                <p>Kimetsu No Yaiba - Buzo Canguro Hoodie Demon Slayer Anime 7
+                                </p>
+                            </div>
                         </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/KrY5ZbY/sdfsdf.jpg" class="d-block w-60" alt="mousepad">
+                            <div class="carousel-caption d-none d-md-block bg-white rounded-3">
+                                <h4><a class="slide-link" aria-current="page"
+                                        href="https://articulo.mercadolibre.com.ar/MLA-926866799-mousepad-personalizados-21x19-cm-demon-slayer-manga-anime-_JM#searchVariation=88939638205&position=9&search_layout=stack&type=pad&tracking_id=c36bb4cc-de51-4189-88a2-49e03a61ac73&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=9&ad_click_id=ZDRmNjZkMzgtYzI3MC00Yjk3LWI3OWYtZDUyMTJiOTc2MTg0">
+                                        Mousepad Demon Slayer</a></h4>
+                                <p>Mousepad Personalizados 21x19 Cm Demon Slayer Manga Anime
+                                </p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
         <!--PRUEBA DE CARRUSEL rev.03 ANTERIOR
             <div class="contenedorslider d-flex justify-content-center bg-danger" style="max-height: max-content;">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -383,7 +513,7 @@
                 <div class="enlaces p-3">
                     <a href="https://demonslayer-anime.com/">
                         <img class="demon-slayer-logo"
-                            src="http://assets.stickpng.com/images/5ede4a3fb760540004f2c5e9.png"
+                            src="https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABVFfuX7Jf8DDPU-m6hT4ZceRxuYzgVzH2Rl-FUKraNxsEbeNVmly_Ib7xYk4ru7nNpQQW8ig_TycPjbYyAIf1oiQD8Kx1MYBzTUy.png?r=f48"
                             alt="Logo de Demon Slayer" height="70px"></a>
                 </div>
             </div>
