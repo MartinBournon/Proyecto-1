@@ -75,6 +75,29 @@
         </div>
     </header>
     <main class="contenedor">
+        <div class="modal" id="modalLogin" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="d-flex flex-column p-3">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" id="usuario" name="usuario" maxlength="20">
+                                <label for="contraseña">Contraseña</label>
+                                <input type="password" id="contraseña" name="contraseña" maxlength="16">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="mb-4 d-flex flex-row-reverse justify-content-between">
             <div class="shadow-lg p-5 mb-5 background container-fluid m-3 p-3">
                 <section>
