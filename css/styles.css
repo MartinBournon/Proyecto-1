@@ -279,3 +279,31 @@ button h4 {
 /* FIN DE FOOTER */
 
 
+/* PAGE 404 */
+
+.page404 img {
+    max-width: 30%;
+}
+
+.page404 h1{
+    font-size: 6rem;
+}
+
+.page404 p {
+    font-size: 3rem;
+}
+
+.page404 button{
+    background-color: cornflowerblue;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.page404 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*FIN PAGE 404 */
