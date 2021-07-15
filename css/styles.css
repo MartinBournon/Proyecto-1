@@ -11,6 +11,11 @@ span {
     font-weight: 700;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 h1{
     font-size: 4rem;
 }
@@ -300,10 +305,7 @@ button h4 {
     border-radius: 1rem;
 }
 
-.page404 a{
-    text-decoration: none;
-    color: black;
-}
+
 
 
 /*FIN PAGE 404 */
