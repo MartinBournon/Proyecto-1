@@ -22,16 +22,6 @@ h2{
 p{
     font-size: 1.7rem;
 }
-.videoTrailer {    
-    width: 400px;
-    height: 315px;
-
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-}
 
 button h4 {
     font-size: 2rem;
@@ -76,26 +66,23 @@ button h4 {
 /* FIN NAVBAR */
 
 .marcoFoto {
-    max-width: 300px;
+    max-width: 30rem;
     text-align: center;
 }
 
 /*** MAIN ***/
 .contenedor {
-    position: relative;
-    margin: 150px auto;
+    margin: 10rem auto;
     max-width: 90%;
 }
 
-/* MODAL */
-.modal-dialog {
-    /* margin: 15% auto;*/
+/* MODAL DE LOGIN Y REGISTRO */
+.modal-dialog {    
     padding: 5rem; 
 }
 
 .modal-content {
     background-color: hsla(0, 0%, 72%, 1);
-    /* box-shadow: 20px 20px 20px 20px rgb(92, 92, 92); */
     border-radius: 5%;
 }
 
@@ -114,13 +101,8 @@ button h4 {
     text-align: center;
 }
 
-.formModal{
-
-}
-
 .formModal__label{
     font-size: 1.7rem;
-
 }
 
 .formModal__input{
@@ -128,7 +110,6 @@ button h4 {
     margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
-
 
 .modal-footer button {
     font-size: 2rem;
@@ -142,7 +123,7 @@ button h4 {
 
 
 
-/* PRIMERA SECTION */
+/* PRIMERA SECTION LANDING */
 .secciones {
     display: flex;
     flex-direction: column;
@@ -152,7 +133,7 @@ button h4 {
 
 .secciones h1 {
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 
@@ -175,15 +156,30 @@ button h4 {
 }
 
 .imgAside {
-    width: 550px;
+    width: 44rem;
     height: auto;
-
-
 }
 
-/* FIN SECTION */
+.videoTrailer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.videoTrailer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
-/* SEGUNDA SECTION  */
+
+/* FIN PRIMERA SECTION LANDING */
+
+/* SEGUNDA SECTION LANDING */
 
 
 .card-text {
@@ -206,11 +202,12 @@ button h4 {
 }
 
 .tarjeta-globo {
-    box-shadow: 0px 10px 30px 30px rgba(92, 92, 92, 0.479);
+    box-shadow: 0 1rem 3rem 3rem rgba(92, 92, 92, 0.479);
 }
 
-/* FIN SECTION */
+/* FIN SEGUNDA SECTION LANDING */
 
+/*Seccion Personaje */
 .seccionPersonaje{
     padding: 2rem;
     margin: 3rem 2rem;
@@ -236,14 +233,16 @@ button h4 {
 }
 
 .logo{
-    width: 100px;
+    width: 10rem;
 }
+
+/* Fin Seccion Personaje */
 
 /*MERCHANDISING*/
 
 .carousel-item > img{
-    min-height: 810px;
-    min-width: 810px;
+    min-height: 81rem;
+    min-width: 81rem;
 }
 
 #carouselExampleCaptions {
@@ -265,13 +264,13 @@ button h4 {
 .page-footer {
     background-color: #000000;
     color: #fff;
-    padding: 10px 12px;
+    padding: 1rem 1.2rem;
     z-index: 9999;
 }
 
 
 .footer-license {
-    border-top: 1px solid #eee;
+    border-top: 0.1rem solid #eee;
     padding-top: 1rem;
     margin-top: 1rem;
     font-size: 1.2rem;
