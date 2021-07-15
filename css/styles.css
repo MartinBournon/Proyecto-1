@@ -114,8 +114,28 @@ button h4 {
     text-align: center;
 }
 
+.formModal{
+
+}
+
+.formModal__label{
+    font-size: 1.7rem;
+
+}
+
+.formModal__input{
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+
 .modal-footer button {
     font-size: 2rem;
+}
+
+#terminos{
+    text-decoration: none;
 }
 
 /* FIN MODAL */
