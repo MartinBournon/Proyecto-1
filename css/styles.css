@@ -238,7 +238,7 @@ button h4 {
 }
 
 .logo{
-    width: 10rem;
+    width: 15rem;
 }
 
 /* Fin Seccion Personaje */
@@ -279,6 +279,11 @@ button h4 {
     padding-top: 1rem;
     margin-top: 1rem;
     font-size: 1.2rem;
+}
+
+.footer-license a{
+    color: rgb(14, 14, 255);
+    font-weight: 700;
 }
 
 /* FIN DE FOOTER */
