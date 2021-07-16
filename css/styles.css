@@ -161,8 +161,7 @@ button h4 {
 }
 
 .imgAside {
-    width: 44rem;
-    height: auto;
+    max-width: 100%;
 }
 
 .videoTrailer{
