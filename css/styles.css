@@ -243,15 +243,31 @@ button h4 {
 /* Fin Seccion Personaje */
 
 /*MERCHANDISING*/
-
-.carousel-item > img{
-    min-height: 81rem;
-    min-width: 81rem;
+.carousel-caption{
+    /* border: 1px solid black; */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 100%);
 }
 
+.carousel-caption a{
+    font-weight: 700;
+    color: red;
+}
+.carousel-item {
+    width: 100%;
+}
+.carousel-item img{
+    max-width: 100%;
+}
+/* .carousel-item > img{
+    min-height: 81rem;
+    min-width: 81rem;
+} */
+
 #carouselExampleCaptions {
-    width: 45%;
+    width: 45rem;
     align-self: center;
+    
 }
 
 .carouseltotal{
