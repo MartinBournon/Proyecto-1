@@ -2,7 +2,9 @@ html {
     font-size: 62.5%;
 }
 
-
+body{
+    font-size: 2rem;
+}
 main {
     background: rgb(255, 255, 255);
 }
@@ -14,6 +16,10 @@ span {
 a{
     text-decoration: none;
     color: black;
+}
+
+img{
+    max-width: 100%;
 }
 
 h1{
@@ -28,18 +34,14 @@ p{
     font-size: 1.7rem;
 }
 
-button h4 {
-    font-size: 2rem;
+/* GENERAL */
+.btn{
+    font-size: 1.7rem;
 }
+
+/* FIN GENERAL */
 
 /* NAVBAR */
-.navbar {
-    font-size: 2rem;
-}
-
-.navbar-toggler {
-    font-size: 2rem;
-}
 
 .dropdown-item {
     font-size: 1.6rem;
@@ -101,7 +103,6 @@ button h4 {
 }
 
 .modal-body {
-    font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
@@ -116,9 +117,9 @@ button h4 {
     margin-top: 0.5rem;
 }
 
-.modal-footer button {
+/* .modal-footer button {
     font-size: 2rem;
-}
+} */
 
 #terminos{
     text-decoration: none;
@@ -148,7 +149,6 @@ button h4 {
 }
 
 .secciones p {
-    font-size: 2rem;
     line-height: 2;
 }
 
@@ -191,7 +191,6 @@ button h4 {
 }
 
 .card h5 {
-    font-size: 2rem;
     text-align: center;
 }
 
@@ -244,14 +243,22 @@ button h4 {
 
 /*MERCHANDISING*/
 .carousel-caption{
-    /* border: 1px solid black; */
-    background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 100%);
+    opacity: 80%;
 }
 
 .carousel-caption a{
-    font-weight: 700;
-    color: red;
+    font-weight: 900;
+    color: rgb(60, 57, 250);    
+}
+
+.carousel-caption a:hover{
+    font-weight: 900;
+    color: rgb(250, 57, 57);    
+}
+
+.carousel-caption p{
+    font-weight: 700;  
 }
 .carousel-item {
     width: 100%;
@@ -259,10 +266,6 @@ button h4 {
 .carousel-item img{
     max-width: 100%;
 }
-/* .carousel-item > img{
-    min-height: 81rem;
-    min-width: 81rem;
-} */
 
 #carouselExampleCaptions {
     width: 45rem;
@@ -273,7 +276,7 @@ button h4 {
 .carouseltotal{
     padding: 2rem;
     margin: 3rem 2rem;
-    text-align: center
+    text-align: center;
 }
 
 /*FIN DE MERCHANDISING*/
@@ -320,12 +323,8 @@ button h4 {
 
 .page404 button{
     background-color: cornflowerblue;
-    font-size: 2rem;
     font-weight: 700;
     border-radius: 1rem;
 }
-
-
-
 
 /*FIN PAGE 404 */
