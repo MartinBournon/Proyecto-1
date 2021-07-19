@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+    <title>Encuestas</title>
+  </head>
+  
+    <br>
+<body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  
+  <div class="container" id="formulario">
+   
+      <form class="row g-2 needs-validation" novalidate>
+       <h3>Datos de contacto</h3>
+        <div class="col-md-2">
+          <label for="formulario" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+       <div class="col-sm-1">
+          <label for="formulario" class="form-label">Edad</label>
+          <input type="text" class="form-control" id="Edad"required>
+       </div>
+       <div class="col-md-3">
+        <label for="formulario" class="form-label">País</label>
+        <input type="text" class="form-control" id="País" required>
+      </div>
+      <div class="col-md-3">
+        <label for="formulario" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="Ciudad" required>
+      </div>
+       <div class="col-md-4">
+          <label for="formulario" class="form-label">Email</label>
+        <div class="input-group has-validation">
+            <span class="email" id="email"></span>             
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+     <br>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </div>
+  <br>
+
+  <div>
+    <h3>¿Qué te pareció el anime?</h3>
+ <div class="form-check form-check-inline">
+   
+   <br>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">1</label>
+     <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">5</label>
+      </div>
+   </div>  
+</div>
+   <br>
+<div>
+  <h3>¿Cuál es tu capítulo favorito?</h3>
+   <select class="form-select" aria-label="Default select example" ar>
+        <option selected>Capítulos</option>
+        <option value="1">1 - Crueldad</option>
+        <option value="2">2 - El instructor, Sakonji Urokodaki</option>
+        <option value="3">3 - Sabito y Mokomo</option>
+        <option value="4">4 - Selección final</option>
+        <option value="5">5 - tu acero</option>
+        <option value="6">6 - Espadachín con demonio</option>
+        <option value="7">7 - Muzan Kibutsuji</option>
+        <option value="8">8 - Cautivador olor a sangre</option>
+        <option value="9">9 - Demonios de temaria y flechas</option>
+        <option value="10">10 - Siempre juntos</option>
+        <option value="11">11 - La casa de los tambores</option>
+        <option value="12">12 - El jabalí muestra sus colmillos mientras Zenitsu duerme</option>
+        <option value="13">13 - Algo más importante que la vida</option>
+        <option value="14">14 - La casa del blasón de glicinias</option>
+        <option value="15">15 - El monte Natagumo</option>
+        <option value="16">16 - Que otro vaya al frente</option>
+        <option value="17">17 - Domina una única cosa</option>
+        <option value="18">18 - Lazos simulados</option>
+        <option value="19">19 - Dios del fuego</option>
+        <option value="20">20 - Una familia unida a la fuerza</option>
+        <option value="21">21 - Violando las normas</option>
+        <option value="22">22 - El patrón</option>
+        <option value="23">23 - Reunión de los pilares</option>
+        <option value="24">24 - Entrenamiento restaurador</option>
+        <option value="25">25 - Kanao Tsuyuri, Tsuguko</option>
+        <option value="26">26 - Una nueva misión</option>
+    </select>
+    </div>
+  </div>
+   <br>
+  <div class="container">
+    <h3>¿Cuánto de gustan estos personajes?</h3>
+    <br>
+    <div class="card-group">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="IMG/tanjiro.jpg" class="card-img-top" alt="tanjiro">
+            <div class="card-body">
+              <h3 class="card-title">Tanjirō Kamado</h3>
+          </div>
+            <div class="card-footer"> <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">5</label>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+       <br> 
+       <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="IMG/nezuko.jpg" class="card-img-top" alt="nezuko">
+            <div class="card-body">
+              <h3 class="card-title">Nezuko Kamado</h3>
+           </div>
+            <div class="card-footer">  <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">5</label>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">     
+          <div class="card h-100">
+            <img src="IMG/Zenitsu.jpg" class="card-img-top" alt="zenitsu">
+            <div class="card-body">
+              <h3 class="card-title">Zenitsu Agatsuma</h3>
+            </div>
+            <div class="card-footer">
+                <div class="form-check form-check-inline">
+                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                </div>    
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="IMG/inosuke.jpg" class="card-img-top" alt="inosuke">
+            <div class="card-body">
+              <h3 class="card-title">Inosuke Hashibira</h3>
+            </div>
+            <div class="card-footer"> <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">5</label>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>  
+    <div>
+        <br>
+      <div class="container">  
+        <h3>¿Cuánto de gustan los Pilares?</h3>
+        <br>
+         <div class="card-group">
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+                <div class="col">
+                <div class="card h-100">    
+                <img src="IMG/tomioka.jpg" class="card-img-top" alt="tomioka">
+                <div class="card-body">
+                  <h3 class="card-title">Tomioka Giyū</h3>
+                </div>
+                <div class="card-footer"> <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </div>
+           <br> 
+           <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMG/shinobu.jpg" class="card-img-top" alt="shinobu">
+                <div class="card-body">
+                  <h3 class="card-title">Kocho Shinobu</h3>
+               </div>
+                <div class="card-footer">  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMG/rengoku.jpg" class="card-img-top" alt="rengoku">
+                <div class="card-body">
+                  <h3 class="card-title">Rengoku Kyöjurö</h3>
+                </div>
+                <div class="card-footer">
+                    <div class="form-check form-check-inline">
+                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">4</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">5</label>
+                      </div>
+                    </div>             
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMG/tengen.jpg" class="card-img-top" alt="tengen">
+                <div class="card-body">
+                  <h3 class="card-title">Uzui Tengen</h3>
+                </div>
+                <div class="card-footer"> <div class="form-check form-check-inline">
+                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="IMG/iguro.jpg" class="card-img-top" alt="iguro">
+              <div class="card-body">
+                <h3 class="card-title">Iguro Obanai</h3>
+       
+              </div>
+              <div class="card-footer"> <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+         <br> 
+         <div class="row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="IMG/mitsuri.png" class="card-img-top" alt="mitsuri">
+              <div class="card-body">
+                <h3 class="card-title">Kanroji Mitsuri</h3>
+             </div>
+              <div class="card-footer">  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="IMG/tokito.jpg" class="card-img-top" alt="tokito">
+              <div class="card-body">
+                <h3 class="card-title">Tokitō Muichirō</h3>
+              </div>
+              <div class="card-footer">
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">5</label>
+                    </div>
+                  </div>             
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="IMG/sanemi.jpg" class="card-img-top" alt="sanemi">
+              <div class="card-body">
+                <h3 class="card-title">Shinazugawa Sanemi</h3>
+              </div>
+              <div class="card-footer"> <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>   
+         
+        <div class="row row-cols-1 row-cols-md-2 g-5">
+           <div class="col">
+            <div class="card h-100">
+              <img src="IMG/gyomei.jpg" class="card-img-top" alt="gyomei">
+              <div class="card-body">
+                <h3 class="card-title">Himejima Gyomei</h3>
+              </div>
+              <div class="card-footer"> <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>  
+    </div>
+    </div>     
+    <br>  
+        <div>
+          <h3>¿Qué te pareció la película: Kimetsu no Yaiba - Mugen train?</h3>
+          <br>
+            <div class="form-check form-check-inline">
+            
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">5</label>
+              </div>
+            </div>
+         </div>
+        </div>
+         <br> 
+        <div>
+          <h3>¿Harías cosplay de algún personaje?</h3>
+          <br>
+        <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+             <label class="form-check-label" for="inlineRadio1">Si</label>
+             <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+             <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>    
+         </div> 
+      </div>  
+    <br>
+    </div>  
+      <br>
+     <div>
+       <h3>Si tu respuesta fue "si", ¿de cuál o cuáles personajes harías cosplay?</h3>
+       <br>
+        <input class="form-control" type="text" placeholder="Personajes" aria-label="personaje">
+        <br>
+      </div> 
+      <div> 
+        <div class="form-check form-check-inline">
+            <h3>¿Recomendarías ésta página?</h3>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+             <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>       
+      
+    </div>    
+    <br>
+</body>
+
+</html>
