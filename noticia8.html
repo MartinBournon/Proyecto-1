@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anime: ¿por qué se ve más que antes y qué pasa con los animadores?</title>
+        
+        <link rel="icon" type="image/jpg" href="demonslayerlogo.png"></link>
+
+    
+
+        <!--link css bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Personajes
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                          <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                          <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                          <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
+                      </ul>
+                  </li>
+  
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav mb-lg-0 mr-5 gap-3">
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                          data-bs-target="#modalLogin">
+                          <h4>Login</h4>
+                      </button>
+                  </li>
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                          data-bs-target="#modalRegistro">
+                          <h4>Registrarse</h4>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+          <div class="banner">
+              <a href="index.html">
+                  <div id="banner-img"></div>
+              </a>
+          </div>
+      </nav>
+  </header>
+  
+  <main class="contenedor">
+  
+      <div class="modal fade" id="modalLogin" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Login</h5>
+                  </div>
+                  <div class="modal-body">
+                      <form action="">
+                          <div class="d-flex flex-column p-3">
+                              <label class="formModal__label" for="usuario">Usuario</label>
+                              <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                              <label class="formModal__label" for="contraseña">Contraseña</label>
+                              <input class="formModal__input" type="password" id="contraseña" name="contraseña" maxlength="16">
+                              <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu contraseña?</a></label>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer justify-content-evenly">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Ingresar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modalRegistro" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Registrarse</h5>
+                  </div>
+                  <div class="modal-body">
+                      <form class="formModal" action="">
+                          <div class="d-flex flex-column">
+                              <label class="formModal__label" for="nombre">Nombre</label>
+                              <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                              <label class="formModal__label" for="apellido">Apellido</label>
+                              <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30">
+                              <label class="formModal__label" for="email">Email</label>
+                              <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                              <label class="formModal__label" for="usuario">Usuario</label>
+                              <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20">
+                              <label class="formModal__label" for="contraseña2">Contraseña</label>
+                              <input class="formModal__input" type="password" id="contraseña2" name="contraseña2" maxlength="16">
+                              <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
+                              <input class="formModal__input" type="password" id="contraseña3" name="contraseña3" maxlength="16">
+                              <div class="d-flex justify-content-evenly align-items-center">
+                                  <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                  <label class="formModal__label" for="aceptoCond"><a id="terminos" href="page404.html"> Acepto los términos y condiciones</a></label>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer justify-content-evenly">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Registrarse</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    <body>
+        <!--link Java bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+      
+      <section class="m-5 p-5">
+        <h1>Anime: ¿por qué se ve más que antes y qué pasa con los animadores?</h1>
+        
+        <h5 class="text-muted">Descubrí todo lo que la revolución del anime está causando alrededor del mundo.</h5>
+        <br>          
+        
+        <img src="not8.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
+              
+        <br><br>            
+        
+        <h5 class="text-dark">5 de mayo de 2021</h5>
+            
+        <p>
+           
+            Puede que el anime esté atravesando una de <strong>sus mejores épocas de la historia</strong>. El género tiene audiencias en casi cualquier parte del mundo. Las historias están llegando a diversos públicos y, tecnología mediante, se cuenta con una serie de herramientas que permiten mejorar las adaptaciones de los mangas o las nuevas propuestas. Un boom. <br>
+            A esto se suma <strong>el auge del streaming</strong>, un cambio en los hábitos de consumos que se preveía a largo plazo y que la pandemia de la COVID-19 aceleró. <strong>Cada vez se ve más anime y hay mayor diversidad de historias</strong>. Sin embargo, esa demanda también es un arma de doble filo: los estudios trabajan a toda marcha y los animadores, exhaustos, "no le ven el queso a la tostada". <br>
+            Fenómenos como Demon Slayer (Kimetsu no Yaiba), Ataque a los titanes (Shingeki no Kyojin) o Death Note impactan en el manga y en el anime. <strong>El caso de Demon Slayer tiene una resonancia aún mayor</strong>. Su influencia en la industria ya no solo se asocia a las historietas y a Netflix, sino también con el cine, rompiendo récords y movilizando audiencias.                                   
+        </p>
+        <br>
+
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>El caso de Demon Slayer tiene una resonancia aún mayor</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Crítica internacional</cite>
+          </figcaption>
+        </figure>
+        
+        <h3>¿Qué dicen los números?</h3>
+        <p>
+            De acuerdo con Parrot Analytics, empresa enfocada en el estudio de medios de comunicación y plataformas, la demanda de anime aumentó de forma significativa. El incremento no es sólo Japón, amo y señor del manga y del anime.  El estudio “Animation Landscape Update: Spotlight on Anime” indica que el interés hacia el anime aumentó a escala global. Entre mayo de 2020 y abril de 2021, la atención se incrementó de la siguiente manera: <br>
+            Estados Unidos: 100%<br>
+            Brasil: 36,9%<br>
+            Canadá: 32,5%<br>
+            China: 30,5%<br>
+            Reino Unido: 27,9% <br>
+            Alemania: 27,9% <br>
+            México: 26,6%<br>
+            Rusia: 26,4%<br>
+            Estos no fueron los únicos países evaluados y que también manifestaron un crecimiento. Sin embargo, los datos esconden uno más importante marcado en el informe: en Estados Unidos hay una brecha de más de 30% entre la demanda de anime de las audiencias y la oferta de contenido disponible.
+        </p>
+        <br>
+
+        
+        
+        <h3>La crisis del éxito</h3>
+        <p>
+            Esa brecha entre la demanda y la oferta, que quizá no solo se produce en Estados Unidos, representa una <strong>crisis en el sector</strong>. El auge del anime está reclamando más de lo que pueden ofrecer. En ese escenario influyen distintos factores. Durante la más reciente edición de “Ani-May”, un evento con distintas ponencias sobre el género y la industria, se detalló en relación con los motivos del crecimiento y, también, de su coyuntura actual.<br>
+            De acuerdo con lo reseñado por Señal News, entre las razones expuestas por los especialistas destaca el desarrollo del streaming.<strong> A los canales tradicionales se suma el espacio que distintas plataformas, como Netflix o Crunchyroll</strong>, dan al género. Netflix está desarrollando contenidos propios mientras que Crunchyroll se dedica de forma exclusiva a la difusión de anime.<br>
+            ¿Qué genera esto? <strong>Los seguidores tradicionales cuentan con más opciones para ver anime</strong> y, a su vez, es más fácil captar nuevos fans. Durante “Ani-May” se planteó el caso de los padres que heredan a los hijos esos hábitos de consumo. Ese interés multigeneracional no se puede satisfacer con facilidad. 
+            De acuerdo a lo registrado por Señal News, <strong>el desarrollo de un nuevo anime desde cero hasta su etapa de difusión lleva, en promedio, dos años</strong>. Ese tiempo hay que ubicarlo dentro de las dinámicas de consumo actuales, marcadas por la inmediatez y una competencia agresiva para captar audiencias. Eso obliga a las productoras a establecer nuevas estrategias. <br>
+            MAPPA Studio, la empresa encargada de animar la temporada final de Ataque a los titanes (Shingeki no Kyojin), comenzó a producir la segunda parte del final mientras emitían la primera. Esa dinámica de trabajo hizo posible que, a los pocos minutos de estrenar el último episodio de la primera parte, anunciaran que habría una segunda y que llegará entre finales de 2021 y principios de 2022. <br>
+            El auge del anime, cómo no, <strong>guarda relación con el del manga</strong>. Uno y otro se retroalimenta porque, en no pocos casos, quien lee una historia luego quiere verla animada y viceversa. Sobre el manga, un detalle: 2020, pese a todas las limitaciones derivadas por la crisis sanitaria global, fue el año de más ganancias para la industria desde 1978.<br>
+            A estas dinámicas, propias del universo de los medios de comunicación y la tradición manga-anime, se suma otro factor: las adaptaciones a los videojuegos. Si bien éstas escapan de los estudios de animación, contribuyen a generar nuevos seguidores, a sumar más gente en la fila que espera una nueva temporada o nuevas narrativas para seguir viendo. 
+        </p>
+        <br>
+
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>El desarrollo de un anime desde cero lleva en promedio dos años</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title">Señal News</cite>
+            </figcaption>
+          </figure>
+
+        <h3>El otro lado del anime: los animadores</h3>
+        <p>
+            Desde hace años <strong>la industria del anime genera millones de dólares a favor</strong>. La producción de historias involucra a distintas variantes, como el desarrollo de películas, la venta de derechos para adaptaciones a videojuegos o en plataformas más grandes, así como la música y el merchandising. La caja registradora se abre y cierra con frecuencia.<br>
+            Sin embargo, <strong>hay una disparidad entre las ganancias totales de la industria y los beneficios que reciben los animadores</strong>. Ellos son los encargados de representar las historias, cuadro por cuadro, que luego son vistas por miles de personas. Son conocidos en el sector como “genga-man”. <br>
+            Este gremio, de acuerdo con la Asociación de Creadores de Animación de Japón, pasó de ganar un promedio de 29 mil dólares al año a percibir 36 mil dólares durante 2019. A simple vista, no parecen datos tan alarmantes. La sorpresa se presenta cuando se comparan con los ingresos de los trabajadores residenciados en Estados Unidos: su promedio de ganancias anual fue de 75 mil dólares.<br>
+            Para llevar esas cifras a términos actuales y diarios, <strong>se denuncia que un animador puede ganar 200 dólares al mes</strong>. Por su parte, la industria registra ganancias anuales por sobre los 20 mil millones de dólares. A esto se suman otros factores, como las malas condiciones de trabajo, el nivel de exigencia que en varias ocasiones influye de forma negativa en la salud de los empleados y el acoso en redes sociales que algunos han recibido. 
+            Este contexto también fue abordado en “Ani-May”. Los analistas, teniendo en cuenta el volumen de la demanda y la exigencia que eso implica, resaltaron la necesidad de que las productoras y los creativos tengan más control sobre los contenidos.  Esto, en oposición a la práctica de ceder ante plataformas globales. ¿Será posible?
+
+        </p>
+                     
+      </section>
+
+      <style> p{
+        font-size: 20px;
+        color: black;
+
+        }
+      </style>
+
+<footer class="page-footer bg-dark text-light">
+    <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
+    <div class="row mt-2">
+    <div class="col-lg-4 text-center mb-3">
+        <h4>Demon Slayer Oficial Page</h4>
+        <div class="p-3">
+            <a target="_blank" href="https://demonslayer-anime.com/">
+                <img class="demon-slayer-logo"
+                    src="IMG/BannerEN.png"
+                    alt="Logo de Demon Slayer" height="70px"></a>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
+    <!-- <div class="row"> -->
+        <div class="col-lg-4 text-center">
+            <h4>Demon Slayer Media Contact</h4>
+            <div class="p-3">
+                <a target="_blank" href="https://www.crunchyroll.com/es">
+                    <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
+                        height="50px"></a>
+                <a target="_blank" href="https://www.netflix.com">
+                    <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
+                <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
+                    <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
+                        height="50px"></a>
+            </div>
+        </div>
+        <!-- AQUI ENLACE A SPONSORS DE LA WEB-->
+        <div class="col-lg-4 text-center">
+            <h4>Sponsors</h4>
+            <div class="p-3">
+                <a target="_blank" href="https://rollingcodeschool.com">
+                    <img class="RollingCode-logo"
+                        src="https://rollingcodeschool.com/wp-content/uploads/2020/05/Logo-Completo-BLANCO-RollingoCode.fw_.png"
+                        alt="Logo de RollingCode" height="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
+    <p id="license" class="text-center footer-license text-light">© 2005-2021 Mozilla and individual contributors. Content is
+        available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+
+
+</footer>
+
+    </body>
+
+</html>

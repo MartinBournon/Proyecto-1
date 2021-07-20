@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demon Slayer: estas son las 10 historias que más impactaron a la fanaticada</title>
+        
+        <link rel="icon" type="image/jpg" href="demonslayerlogo.png"></link>
+
+    
+
+        <!--link css bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Personajes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-lg-0 mr-5 gap-3">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">
+                            <h4>Login</h4>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalRegistro">
+                            <h4>Registrarse</h4>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="index.html">
+                    <div id="banner-img"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="contenedor">
+    
+        <div class="modal fade" id="modalLogin" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="d-flex flex-column p-3">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <label class="formModal__label" for="contraseña">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña" name="contraseña" maxlength="16">
+                                <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu contraseña?</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalRegistro" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrarse</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="formModal" action="">
+                            <div class="d-flex flex-column">
+                                <label class="formModal__label" for="nombre">Nombre</label>
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <label class="formModal__label" for="apellido">Apellido</label>
+                                <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30">
+                                <label class="formModal__label" for="email">Email</label>
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20">
+                                <label class="formModal__label" for="contraseña2">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña2" name="contraseña2" maxlength="16">
+                                <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña3" name="contraseña3" maxlength="16">
+                                <div class="d-flex justify-content-evenly align-items-center">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <label class="formModal__label" for="aceptoCond"><a id="terminos" href="page404.html"> Acepto los términos y condiciones</a></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <body>
+        <!--link Java bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+      
+      <section class="m-5 p-5">
+        <h1>Demon Slayer: estas son las 10 historias que más impactaron a la fanaticada</h1>
+        
+        <h5 class="text-muted">La serie se consolida como una de las más preferidas por los fanáticos, seguidores y los críticos.</h5>
+        <br>          
+        
+        <img src="not3.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
+              
+        <br><br>            
+        
+        <h5 class="text-dark">9 de Junio de 2021</h5>
+            
+        <p>
+            La temporada 1 de “Demon Slayer” ha tenido gran aceptación entre los seguidores de la serie en Netflix y esto también se dio cuando en Japón Demon Slayer: Kimetsu no Yaiba, <strong>se convirtió en la serie de manga más vendida durante el 2020 </strong>. No obstante, se debe indicar que hizo su debut en Weekly Shonen Jump en febrero de 2016, lo cual ayudó a que la franquicia obtenga un éxito rotundo.<br>
+            El éxito también estuvo con el lanzamiento de la película Demon Slayer: Kimetsu no Yaiba the Movie: Mugen Train, que <strong>arrasó con la taquilla en ese país </strong>.
+            El anime ha sido reconocido por los fanáticos, seguidores y críticos como una de las más vistas donde no solamente resalta el tema de la animación sino <strong>el mensaje transmitido mediante las historias de cada uno de los personajes </strong>. Es así que de esta primera entrega se desprende una lista de 10 historias con un gran contenido emocional:
+                 
+        </p>
+        <br>
+
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>Resalta el mensaje transmitido mediante las hitorias de los personajes</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">Críticos del Anime</cite>
+          </figcaption>
+        </figure>
+
+        <br>
+        <h3>TANJIRO Y LOS FANTASMAS</h3>
+        <p>  
+            Con el objetivo de aprender a dominar la espada, Tanjiro entrenó con Sakoniji Urokodaki pero para lograr su propósito tuvo la ayuda de Sabito y Makomo quienes lo ayudaron a entrenar y una de su tarea era cortar en dos una gran roca.<br>
+            Tras conseguir esto se encontró con un demonio que buscaba asesinar a todos los estudiantes de Urokodaki. Esto lo hacía para buscar venganza luego de ser capturado y encarcelado en el monte Fujikasane. Fue allí cuando el demonio confesó que había matado a varios estudiantes entre ellos a Sabito y Makomo.
+        </p>
+        <br>
+
+        <h3>TANJIRO PIERDE A SU FAMILIA</h3>
+        <p>  
+            Tanjiro fue advertido por un anciano que no camine por la noche, pues, los demonios aparecen en busca de hombre para comérselos. Ante ello, Tanjiro se dirige a casa donde percibe un olor a sangre antes de llegar a su hogar. Luego se da cuenta que su familia fue masacrada por un demonio. Pese a quedar en shock por la situación, vio que Nezuko aún sigue con viva y la trata de llevar con un médico en medio de la ventisca helada.
+        </p>
+        <br>
+
+        <h3>MADRE ARAÑA ABRAZÓ A LA MUERTE</h3>
+        <p>  
+            La Madre Araña, que no era otra cosa que un demonio, vivió una vida dura luego que fue obligada a actuar como una madre falsa para Rui. Ella tuvo que soportar agresiones físicas por parte del demonio falso Padre Araña y Rui. Ella vio como un alivio cuando Tanjiro estaba a punto de decapitarla.
+        </p>
+        <br>
+
+        <h3>LA HISTORIA DE RUI</h3>
+        <p>  
+            Rui comentó ser un asesino despiadado pero tras su muerte los fanáticos conocieron detalles sobre vida anterior. Es así que Rui nació con un cuerpo débil y frágil; sin embargo, luego de encontrarse con Muzen fue convertido en un demonio. Fue así que asesinó a su padre y a su madre que intentaron matarlo porque no podían soportar el hecho de que se comía humanos.
+        </p>
+        <br>
+
+        <h3>ZENITSU REVELA SU DIFÍCIL PASO</h3>
+        <p>  
+            Zenitsu cuenta con una gran fuerza y es conocido por ser un cobarde durante sus batallas contra los demonios y carece de confianza. Esto se hizo evidente durante su historia de fondo, cuando lloró constantemente y se consideraba como un fracaso durante su entrenamiento con Jigoro.
+        </p>
+        <br>
+
+        <h3>TANJIRO PIDE QUE PERDONEN A SU HERMANA</h3>
+        <p>  
+            Al ver que Nezuko se transforma en un demonio, Tanjiro busca defenderse del ataque de su hermana pequeña y hace esfuerzos para recordarle quién esa. Nezuko lucha contra el impulso de comerse a su hermano, pero Giyu  Tomioka, interviene para matar Nezuko.<br>
+            Giyu atrapa a Nezuko y saca su espada para decapitarla; sin embargo, Tanjiro opta por rogarle a Giyu que le perdone la vida a su hermana, pues, es su último familiar sobreviviente y jura que la convertirá de nuevo en humana.
+
+        </p>
+        <br>
+
+        <h3>TANJIRO CONSUELA A KAZUMI</h3>
+        <p>  
+            Tanjiro tuvo como misión rastrear al demonio que tenía como función secuestrar mujeres jóvenes en horas de la noche. Entre las jóvenes desparecidas se encontraba la novia de Kazumi, a quien conoció durante su trayecto.
+            Tras una batalla con el demonio del pantano que había estado atrapando a las jóvenes, se conoció que la futura esposa de Kazumi había fallecido. Tanjiro le entrega a Kazumi un accesorio que le pertenecía a su futura esposa para tratar de consolarlo
+
+        </p>
+        <br>
+
+        <h3>ZENITSU PROTEGIÓ LA CAJA DONDE LLEVABA A NEZUKO</h3>
+        <p>  
+            Zenitsu nació con una gran habilidad y es la de tener mayor sentido del oído y supo que Tanjiro estaba viajando con un demonio antes de encontrarse con Nezuko fuera de su caja. Es así que oyó a Tanjiro decirles a Shoichi y Teruko, a quienes les pidió que protegieran la caja mientras encontraban al demonio dentro de la Mansión Tsuzumi.
+        </p>
+        <br>
+
+        <h3>GIYU Y UROKODAKI SON LEALES A TANJIRO</h3>
+        <p>  
+            Tanjiro se encontraba esperando el veredicto para saber si se le permitirá continuar viajando junto a Nezuko, pero por otro lado, Kagaya revela que tanto Giyu como Urokodaki creen que a pesar de ser un demonio, Nezuko no es una amenaza para la humanidad.
+        </p>
+        <br>
+
+        <h3>LAS FELICITACIONES A KYOGAI</h3>
+        <p>  
+            Tanjiro se encontró con Kyogai luchando contra un ex miembro de los Doce Kizuki. Cabe indicar que Kyogai fue despojado de su título debido a que alcanzó su límite de consumo humano. Además confesó que un individuo desconocido lo criticó por sus habilidades de escritura; sin embargo, antes que falleciera Kyogai, Tanjiro tuvo algunas frases positivas hacia él e indicó que eran increíbles sus habilidades.
+        </p>
+        <br>
+          
+        </p>                    
+      </section>
+
+      <style> p{
+        font-size: 20px;
+        color: black;
+
+        }
+      </style>
+
+<footer class="page-footer bg-dark text-light">
+    <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
+    <div class="row mt-2">
+    <div class="col-lg-4 text-center mb-3">
+        <h4>Demon Slayer Oficial Page</h4>
+        <div class="p-3">
+            <a target="_blank" href="https://demonslayer-anime.com/">
+                <img class="demon-slayer-logo"
+                    src="IMG/BannerEN.png"
+                    alt="Logo de Demon Slayer" height="70px"></a>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
+    <!-- <div class="row"> -->
+        <div class="col-lg-4 text-center">
+            <h4>Demon Slayer Media Contact</h4>
+            <div class="p-3">
+                <a target="_blank" href="https://www.crunchyroll.com/es">
+                    <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
+                        height="50px"></a>
+                <a target="_blank" href="https://www.netflix.com">
+                    <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
+                <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
+                    <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
+                        height="50px"></a>
+            </div>
+        </div>
+        <!-- AQUI ENLACE A SPONSORS DE LA WEB-->
+        <div class="col-lg-4 text-center">
+            <h4>Sponsors</h4>
+            <div class="p-3">
+                <a target="_blank" href="https://rollingcodeschool.com">
+                    <img class="RollingCode-logo"
+                        src="https://rollingcodeschool.com/wp-content/uploads/2020/05/Logo-Completo-BLANCO-RollingoCode.fw_.png"
+                        alt="Logo de RollingCode" height="50px"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
+    <p id="license" class="text-center footer-license text-light">© 2005-2021 Mozilla and individual contributors. Content is
+        available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+
+
+</footer>
+
+    </body>
+
+</html>
