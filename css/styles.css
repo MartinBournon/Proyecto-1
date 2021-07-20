@@ -1,0 +1,316 @@
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    background: rgb(255, 255, 255);
+}
+
+span {
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.7rem;
+}
+
+button h4 {
+    font-size: 2rem;
+}
+
+/* NAVBAR */
+.navbar {
+    font-size: 2rem;
+}
+
+.navbar-toggler {
+    font-size: 2rem;
+}
+
+.dropdown-item {
+    font-size: 1.6rem;
+}
+
+.banner {
+    position: absolute;
+    right: 2%;
+    top: 90%;
+}
+
+#banner-img {
+    min-width: 10rem;
+    min-height: 10rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/BannerEN.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+#banner-img:hover {
+    background-image: url('../img/BannerJAP.png');
+    background-size: contain;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+}
+
+/* FIN NAVBAR */
+
+.marcoFoto {
+    max-width: 30rem;
+    text-align: center;
+}
+
+/*** MAIN ***/
+.contenedor {
+    margin: 10rem auto;
+    max-width: 90%;
+}
+
+/* MODAL DE LOGIN Y REGISTRO */
+.modal-dialog {    
+    padding: 5rem; 
+}
+
+.modal-content {
+    background-color: hsla(0, 0%, 72%, 1);
+    border-radius: 5%;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.formModal__label{
+    font-size: 1.7rem;
+}
+
+.formModal__input{
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.modal-footer button {
+    font-size: 2rem;
+}
+
+#terminos{
+    text-decoration: none;
+}
+
+/* FIN MODAL */
+
+
+
+/* PRIMERA SECTION LANDING */
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.secciones h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.secciones h2 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.secciones p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.pieFotoAutora div {
+    padding: 0;
+}
+
+.pieFotoAutora div p {
+    font-size: 1.5rem;
+}
+
+.imgAside {
+    width: 44rem;
+    height: auto;
+}
+
+.videoTrailer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.videoTrailer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FIN PRIMERA SECTION LANDING */
+
+/* SEGUNDA SECTION LANDING */
+
+
+.card-text {
+    font-size: 1.7rem;
+}
+
+.card h5 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.background {
+    border-radius: 5rem;
+    background-color: hsla(0, 0%, 72%, 0.24);
+}
+
+.subTitulo {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.tarjeta-globo {
+    box-shadow: 0 1rem 3rem 3rem rgba(92, 92, 92, 0.479);
+}
+
+/* FIN SEGUNDA SECTION LANDING */
+
+/*Seccion Personaje */
+.seccionPersonaje{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center;
+}
+
+.seccionPersonaje h2{
+    margin-bottom: 2rem;
+}
+
+.cardPersonaje .card{
+    background: transparent;
+    border: none;
+}
+
+.cardPersonaje .card img{
+    filter: grayscale(60%);
+    transition: .5s ease-in;
+}
+
+.cardPersonaje .card img:hover{
+    filter: grayscale(0%);
+}
+
+.logo{
+    width: 15rem;
+}
+
+/* Fin Seccion Personaje */
+
+/*MERCHANDISING*/
+
+.carousel-item > img{
+    min-height: 81rem;
+    min-width: 81rem;
+}
+
+#carouselExampleCaptions {
+    width: 45%;
+    align-self: center;
+}
+
+.carouseltotal{
+    padding: 2rem;
+    margin: 3rem 2rem;
+    text-align: center
+}
+
+/*FIN DE MERCHANDISING*/
+
+
+/* FOOTER */
+
+.page-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 1.2rem;
+    z-index: 9999;
+}
+
+
+.footer-license {
+    border-top: 0.1rem solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-license a{
+    color: rgb(14, 14, 255);
+    font-weight: 700;
+}
+
+/* FIN DE FOOTER */
+
+
+/* PAGE 404 */
+
+.page404 img {
+    max-width: 30%;
+}
+
+.page404 h1{
+    font-size: 6rem;
+}
+
+.page404 p {
+    font-size: 3rem;
+}
+
+.page404 button{
+    background-color: cornflowerblue;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+
+
+
+/*FIN PAGE 404 */
