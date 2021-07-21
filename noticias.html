@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Noticias - Demon Slayer</title>
+
+    <style>
+        #ser:checked~#noticias #pelicula,
+        #ser:checked~#noticias #anime,
+        #ser:checked~#noticias #videosjuegos {
+            display: none;
+        }
+
+        #pel:checked~#noticias #serie,
+        #pel:checked~#noticias #anime,
+        #pel:checked~#noticias #videosjuegos {
+            display: none;
+        }
+
+        #ani:checked~#noticias #serie,
+        #ani:checked~#noticias #pelicula,
+        #ani:checked~#noticias #videosjuegos {
+            display: none;
+        }
+
+        #vid:checked~#noticias #serie,
+        #vid:checked~#noticias #pelicula,
+        #vid:checked~#noticias #anime {
+            display: none;
+        }
+    </style>
 </head>
+
+
+
 
 <body>
     <header>
@@ -56,25 +84,26 @@
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
                             data-bs-target="#modalLogin">
-                            <h4>Login</h4>
+                            Iniciar Sesión
                         </button>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
                             data-bs-target="#modalRegistro">
-                            <h4>Registrarse</h4>
+                            Registrarse
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="banner">
-                <a href="./index.html">
+                <a href="index.html">
                     <div id="banner-img"></div>
                 </a>
             </div>
         </nav>
     </header>
     <main class="contenedor">
+
         <div class="modal fade" id="modalLogin" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -87,8 +116,10 @@
                                 <label class="formModal__label" for="usuario">Usuario</label>
                                 <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
                                 <label class="formModal__label" for="contraseña">Contraseña</label>
-                                <input class="formModal__input" type="password" id="contraseña" name="contraseña" maxlength="16">
-                                <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu contraseña?</a></label>
+                                <input class="formModal__input" type="password" id="contraseña" name="contraseña"
+                                    maxlength="16">
+                                <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
+                                        contraseña?</a></label>
                             </div>
                         </form>
                     </div>
@@ -111,18 +142,24 @@
                                 <label class="formModal__label" for="nombre">Nombre</label>
                                 <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
                                 <label class="formModal__label" for="apellido">Apellido</label>
-                                <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30">
+                                <input class="formModal__input" type="text" id="apellido" name="apellido"
+                                    maxlength="30">
                                 <label class="formModal__label" for="email">Email</label>
                                 <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
+                                    maxlength="20">
                                 <label class="formModal__label" for="contraseña2">Contraseña</label>
-                                <input class="formModal__input" type="password" id="contraseña2" name="contraseña2" maxlength="16">
+                                <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
+                                    maxlength="16">
                                 <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
-                                <input class="formModal__input" type="password" id="contraseña3" name="contraseña3" maxlength="16">
+                                <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
+                                    maxlength="16">
                                 <div class="d-flex justify-content-evenly align-items-center">
                                     <input type="checkbox" id="aceptoCond" name="aceptoCond">
-                                    <label class="formModal__label" for="aceptoCond"><a id="terminos" href="page404.html"> Acepto los términos y condiciones</a></label>
+                                    <label class="formModal__label" for="aceptoCond"><a id="terminos"
+                                            href="page404.html">
+                                            Acepto los términos y condiciones</a></label>
                                 </div>
                             </div>
                         </form>
@@ -134,178 +171,300 @@
                 </div>
             </div>
         </div>
-        <div class="mb-4 d-flex flex-row-reverse justify-content-between">
-            <div class="shadow-lg p-5 mb-5 background container-fluid m-3 p-3">
-                <section>
-                    <div class="secciones">
-                        <h2>El videojuego Demon Slayer: The Hinokami Chronicles llegará a
-                            Playstation en octubre</h2>
-                        <p>
-                            Su modo de historia llegará hasta el arco del Mugen Train.
-                            <br>
-                            Durante el reciente State of Play, desde Sony presentaron un nuevo tráiler para lo que
-                            será el videojuego <span>Demon Slayer: The Hinokami Chronicles</span>, una adaptación del
-                            popular
-                            manga y anime conocido en Japón bajo el nombre de Kimetsu no Yaiba.
-                            Con un estreno previsto para el próximo 15 de octubre en Playstation 5 y Playstation 4,
-                            el videojuego incluirá un modo de historia que alcanzará hasta el arco Mugen Train (El
-                            mismo de la película), permitiendo controlar a Tanjiro Kamado.
-                        </p>
-                    </div>
-                </section>
-                <section>
-                    <div class="secciones">
-                        <h2>Mira el trailer</h2>
-                        <div class="videoTrailer">
-                            <iframe src="https://www.youtube.com/embed/MP0lp6YQV0g" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
 
+        <section class="shadow-lg p-5 mb-5 background container-fluid p-3 text-center">
+            <div class="filtroNoticia">
+                <input type="radio" name="filtro" id="todo">
+                <label for="todo" class="h5">Últimas</label>
+                <input type="radio" name="filtro" id="ser">
+                <label for="ser" class="h5">Serie</label>
+                <input type="radio" name="filtro" id="pel">
+                <label for="pel" class="h5">Película</label>
+                <input type="radio" name="filtro" id="ani">
+                <label for="ani" class="h5">Anime</label>
+                <input type="radio" name="filtro" id="vid">
+                <label for="vid" class="h5">Videos Juegos</label>
+            </div>
+
+
+            <div id="noticias">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 m-5 ">
+
+                    <div class="col" id="videosjuegos" name="videosjuegos">
+                        <div class="card text-start">
+                            <a href="Noticia1.html" target="_blank">
+                                <img src="img/not1.jpg" class="card-img-top"
+                                    alt="Imagen del lanzamiento del videojuego">
+                            </a>
+                            <div class="card-body">
+                                <a href="Noticia1.html" id="linknot1" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Lanzamiento confirmado: Kimetsu no Yaiba, el
+                                        juego de la
+                                        serie</h5>
+                                </a>
+                                <p class="card-text">La información se ha dado a conocer a través de IGN. Descubrí
+                                    la fecha de su estreno...</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">24 de junio de 2021</small>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </div>
-        <div class="mb-4 d-flex flex-row-reverse justify-content-between">
-            <div class="shadow-lg p-5 mb-5 background container-fluid m-3 p-3">
-                <section>
-                    <div class="secciones">
-                        <h2>Demon Slayer: Mugen Train” Película ONLINE: fecha de estreno en Funimation</h2>
-                        <p>
-                            La película de “Demon Slayer” ya se estrenó en Japón y otros países asiáticos. Ahora se
-                            prepara para llegar a Funimation. Todos los detalles a continuación
-                            <br>
-                            De acuerdo con la sinopsis oficial: “Tanjiro y el grupo han completado su entrenamiento de
-                            rehabilitación en la Butterfly Mansion, y llegan a su próxima misión en el Mugen Train,
-                            donde más cuarenta personas han desaparecido en muy poco tiempo. Tanjiro y Nezuko, junto con
-                            Zenitsu e Inosuke, se unen a uno de los espadachines más poderosos del Cuerpo de Cazadores
-                            de Demonios, Flame Hashira Kyojuro Rengoku, para enfrentarse al demonio a bordo del Tren
-                            Mugen”.
-                            <br>
-                            En principio, “Demon Slayer: Mugen Train” dominó la taquilla en Japón desde su lanzamiento
-                            inicial el otoño pasado. Meses después, en su camino por abrir fronteras, la película fue
-                            confirmada en Estados Unidos para su lanzamiento digital a través de Aniplex of America.
-                            Ahora, el estreno del fenómeno internacional será transmitido exclusivamente solo a través
-                            de Funimation.
-                            <br>
-                        </p>
-                            <div class="">
-                                <img src="https://depor.com/resizer/HkVGVQUIdPE3zcZ5-MKB5OZOX5s=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/CHMJIS37CVGHJBMVOCGXGP26KI.png"
-                                class=" img-fluid rounded-circle" alt="...">
-                            </div>
-                        <br>
-                        <p>    
-                            Funimation tendrá las versiones dobladas y subtituladas de “Demon Slayer: Mugen Train” y
-                            estará disponible en su plataforma y estará disponible para transmitir a partir del 22 de
-                            junio.
-                            <br>
-                            Cabe señalar que la plataforma de streaming tiene una opción gratuita con publicidad, pero
-                            no se ha confiramo si la película estará disponible para usuarios con cuentas gratuitas. Eso
-                            sí, Funimation también ofrece una opción premium ($ 5.99 al mes), que incluye toda la
-                            biblioteca y sin anuncios, o una opción premium plus ($ 7.99 al mes) que incluye algunos
-                            beneficios adicionales.
-                            <br>
-                            Si bien recientemente se anunció el arribo del servicio a Perú, Chile y Colombia el pasado 6
-                            de junio, pasíses que podrán gozar de sus más de cinco mil animes y que se sumarán a la
-                            experiencia que vive desde hace algunos meses México y Brasil, la película de “Demon Slayer”
-                            será exclusiva del servicio únicamente en Estados Unidos, Canadá, Nueva Zelanda y Australia.
-                            Aunque no se descarta la posibilidad de que más adelante lleguen a los países antes
-                            mencionados.
-                            <br>
-                            Vale recordar que la app de Funimation está disponible para algunos televisores y Android,
-                            iOS, SamsungTV, AndroidTV, Roku, Switch, PlayStation y Xbox.
-                            <br>
-                            Finalmente, el director de contenido de Funimation Global Group, Asa Suehira, elogió mucho a
-                            “Mugen Train”, y destacó el entusiasmo de la compañía por traer una película tan popular a
-                            la plataforma:
-                            <br>
-                            <i>“<span>Demon Slayer: Kimetsu no Yaiba the Movie: Mugen Train</span> ha sido un gran éxito desde que se
-                            estrenó el año pasado, galvanizando a los fanáticos y atrayendo a una nueva generación al
-                            anime. Sabemos que los fanáticos de Funimation están ansiosos por experimentar la
-                            electrizante historia nuevamente, y nosotros estamos encantados de agregarlo a nuestro
-                            servicio”, señaló Suehira.
-                            <br>
-                            “Con la adición de la película, los fanáticos pueden sumergirse en la franquicia viendo la
-                            primera temporada de la serie de televisión, tres episodios especiales de televisión y ahora
-                            el largometraje desde sus hogares. Qué gran asociación con Aniplex of America, Shueisha,
-                            ufotable y, por supuesto, nuestra comunidad de fans”, aseguró.</i>
-                        </p>
-                    </div>
-                </section>
-                <section>
-                    <div class="secciones">
-                        <h2>Mira el trailer</h2>
-                        <div class="videoTrailer">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sAU6Istwz6c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
 
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="Noticia2.html" target="_blank">
+                                <img src="img/not2.jpg" class="card-img-top" alt="Imagen de la segunda temporada">
+                                <a>
+                                    <div class="card-body">
+                                        <a href="noticia2.html" id="linknot2" target="_blank"
+                                            style="text-decoration: none;">
+                                            <h5 class="noticia card-title">¿Qué podemos esperar de la segunda
+                                                temporada?
+                                            </h5>
+                                        </a>
+                                        <p class="card-text">Acá tenés todo lo que sabemos de ella sin spoilers
+                                            antes de que llegue.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">14 de junio de 2021</small>
+                                    </div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </div>
-        <div class="mb-4 d-flex flex-row-reverse justify-content-between">
-            <div class="shadow-lg p-5 mb-5 background container-fluid m-3 p-3">
-                <section>
-                    <div class="secciones">
-                        <h2>Aquí es cuando se anunciará la fecha de lanzamiento de la temporada 2 de Demon Slayer
-                        </h2>
-                        <p>
-                            Los fanáticos de Demon Slayer han estado esperando ansiosamente el estreno de la segunda temporada, protagonizada por Mugen Train, que resulta ser la película japonesa más popular de la historia, y también le ha ido muy bien en Occidente.
-                            Hemos escuchado durante mucho tiempo que la segunda temporada de Demon Slayer llegará en 2021, y ahora hay Publicidad Publicidad Sobre su hora de llegada y más información sobre ella.
-                            <br>
-                            <b>13 de julio a las 7 PM JST</b>, Habrá algo llamado “Kimestu TV, New Information Announcement Special” que contendrá nueva información sobre Demon Slayer Season 2, un programa con algunos de los actores de voz del programa, Tanjiro’s y Tengen Uzui específicamente. será transmitido en Canal de YouTube Aniplex Y finalmente deberías decirnos cuándo llegará la temporada 2.
-                            Acabamos de recibir un nuevo tráiler de la segunda temporada, Entertainment District Arc, la semana pasada.
-                            <br>
-                        </p>
-                            <div class="">
-                                <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters:format(jpg)/https://specials-images.forbesimg.com/imageserve/60eaf4f6c62525f17e64a1b9/0x0.jpg"
-                                class=" img-fluid" alt="...">
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia3.html" target="_blank">
+                                <img src="img/not3.jpg" class="card-img-top"
+                                    alt="Imagen de las historias más impactantes">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia3.html" id="linknot3" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Estas son las 10 historias que más impactaron a
+                                        la
+                                        fanaticada</h5>
+                                </a>
+                                <p class="card-text">De esta primera temporada se desprende una lista de 10
+                                    historias con un gran contenido emocional...</p>
                             </div>
-                        <p>    
-                            <br>
-                            Este tráiler presentaba de manera destacada a Tengen Uzui, Sound Hashira, lo que significa que tendrá un papel importante en esta temporada, similar a cómo Flame Hashira fue una parte esencial del Tren Mugen. Espero que sea … una actuación ligeramente mejor.
-                            <br>
-                            Espero que la segunda temporada de Demon Slayer rompa algunos récords de consumo cuando salga al aire, dado que se trata de una serie animada que ha alcanzado una popularidad que nunca antes habíamos visto, como lo demuestra Mugen Train, así como su interés general por los servicios de streaming. .
-                            <br>
-                            El manga ha vendido 150 millones de copias y es el décimo manga más vendido de todos los tiempos, y ha puesto mucha pista para la transmisión de Demon Slayer durante mucho tiempo, y eso ni siquiera descarta posibles spin-offs. En resumen, parece que Demon Slayer recién está comenzando a salir después de la primera temporada y su película, y esperamos que sea una fuerza de la cultura pop durante mucho tiempo a medida que el anime produce nuevas temporadas y su base de fanáticos continúa expandiéndose. . Demon Slayer llegó a Netflix el año pasado, ayudando a construir una audiencia occidental, y todos están emocionados de ver llegar la segunda temporada.
-                            <br>
-                            Entonces, el martes 13 de julio es el momento en el que tendremos más información y definitivamente la fecha de lanzamiento. Esperemos que sea dentro de dos semanas en lugar de dentro de cinco meses.
-                        </p>
+                            <div class="card-footer">
+                                <small class="text-muted">9 de Junio de 2021</small>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
-        </div>
 
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia4.html" target="_blank">
+                                <img src="img/not4.jpg" class="card-img-top" alt="Imagen de los mejores capítulos">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia4.html" id="linknot4" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Estos son los 10 mejores capítulos de la serie
+                                        animada
+                                    </h5>
+                                </a>
+                                <p class="card-text">Aquí un recuento de los mejores capítulos de la primera
+                                    entrega.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">1 de Junio de 2021</small>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-sm-12 text-center ">
-                <a href="#">
-                    <img src="img/logo.png" alt="logo" class="logo">
-                    <a href="#" class="button"></a>
+                    <div class="col" id="anime" name="anime">
+                        <div class="card text-start">
+                            <a href="noticia5.html" target="_blank">
+                                <img src="img/not5.jpg" class="card-img-top" alt="Imagen de las ventas del manga">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia5.html" id="linknot5" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Demon Slayer y Jujutsu Kaisen dominan las ventas
+                                        de manga
+                                    </h5>
+                                </a>
+                                <p class="card-text">A continuación las cifras de ventas de manga y novelas ligeras
+                                    durante 2021 dentro de Japón.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">31 de mayo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia6.html" target="_blank">
+                                <img src="img/not6.jpg" class="card-img-top" alt="Imagen del DVD">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia6.html" id="linknot6" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">El tren infinito ahora rompe récord como el DVD
+                                        más
+                                        vendido en Japón</h5>
+                                </a>
+                                <p class="card-text">El anime marcó records no solo en la pantalla grande, sino
+                                    también en la venta en formato físico</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">25 de mayo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia7.html" target="_blank">
+                                <img src="img/not7.jpg" class="card-img-top"
+                                    alt="Imagen de la censura en Corea del Sur">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia7.html" id="linknot7" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Corea del Sur pidió a Netflix censurar Demon
+                                        Slayer </h5>
+                                </a>
+                                <p class="card-text">Corea del Sur pidió a Netflix censurar Demon Slayer </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">12 de mayo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="anime" name="anime">
+                        <div class="card text-start">
+                            <a href="noticia8.html" target="_blank">
+                                <img src="img/not8.jpg" class="card-img-top" alt="Imagen de animes de antes">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia8.html" id="linknot8" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Anime: ¿por qué se ve más que antes y qué pasa
+                                        con los
+                                        animadores?</h5>
+                                </a>
+                                <p class="card-text">Descubrí todo lo que la revolución del anime está causando
+                                    alrededor del mundo.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">5 de mayo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="anime" name="anime">
+                        <div class="card text-start">
+                            <a href="noticia9.html" target="_blank">
+                                <img src="img/not9.jpg" class="card-img-top"
+                                    alt="Imagen de series parecidas a Demon Slayer">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia9.html" id="linknot9" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">7 series parecidas a Demon Slayer para ver en
+                                        Netflix y
+                                        Crunchyroll</h5>
+                                </a>
+                                <p class="card-text">Para seguir en la misma línea, aquí te presentamos algunas
+                                    propuestas similares ¡Imperdible!</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">2 de mayo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="anime" name="anime">
+                        <div class="card text-start">
+                            <a href="noticia10.html" target="_blank">
+                                <img src="img/not10.jpg" class="card-img-top" alt="Imagen de Netflix">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia10.html" id="linknot10" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Demon Slayer: el imperdible anime que lleva a
+                                        Netflix el
+                                        manga</h5>
+                                </a>
+                                <p class="card-text">26 capítulos componen las aventuras del joven cazador de
+                                    demonios Tanjiro a través de Japón.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">27 de abril de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia11.html" target="_blank">
+                                <img src="img/not11.jpg" class="card-img-top" alt="Imagen de trailer">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia11.html" id="linknot11" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">'Demon Slayer: Kimetsu no Yaiba': Tráiler y
+                                        estreno de la
+                                        temporada 2</h5>
+                                </a>
+                                <p class="card-text">Todo lo que sabemos hasta ahora del anime del momento.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">15 de abril de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="pelicula" name="pelicula">
+                        <div class="card text-start">
+                            <a href="noticia12.html" target="_blank">
+                                <img src="img/not12.jpg" class="card-img-top" alt="Imagen de la película">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia12.html" id="linknot12" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">¿Cuántas películas tiene el anime de Kimetsu no
+                                        Yaiba?
+                                    </h5>
+                                </a>
+                                <p class="card-text">¿No lo sabías? La franquicia de Kimetsu no Yaiba tiene más de
+                                    una película de anime...</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">8 de abril de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end m-5 mt-0">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item disabled">
+                    <a class="page-link" aria-disabled="true" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="noticias2.html">2</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="noticias2.html">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
     </main>
-
     <footer class="page-footer">
         <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
         <div class="row mt-2">
-        <div class="col-lg-4 text-center mb-3">
-            <h4>Demon Slayer Oficial Page</h4>
-            <div class="p-3">
-                <a target="_blank" href="https://demonslayer-anime.com/">
-                    <img class="demon-slayer-logo"
-                        src="IMG/BannerEN.png"
-                        alt="Logo de Demon Slayer" height="70px"></a>
+            <div class="col-lg-4 text-center mb-3">
+                <h4>Demon Slayer Oficial Page</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://demonslayer-anime.com/">
+                        <img class="demon-slayer-logo" src="IMG/BannerEN.png" alt="Logo de Demon Slayer"
+                            height="70px"></a>
+                </div>
             </div>
-        </div>
-        <!-- </div> -->
+            <!-- </div> -->
 
-        <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
-        <!-- <div class="row"> -->
+            <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
+            <!-- <div class="row"> -->
             <div class="col-lg-4 text-center">
                 <h4>Demon Slayer Media Contact</h4>
                 <div class="p-3">
@@ -313,7 +472,8 @@
                         <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
                             height="50px"></a>
                     <a target="_blank" href="https://www.netflix.com">
-                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
+                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix"
+                            height="50px"></a>
                     <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
                         <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
                             height="50px"></a>
@@ -332,8 +492,10 @@
         </div>
 
         <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
-        <p id="license" class="text-center footer-license">© 2005-2021 Mozilla and individual contributors. Content is
-            available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+        <p id="license" class="text-center footer-license">© 2005-2021 Mozilla and individual contributors. Content
+            is
+            available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.
+        </p>
 
 
     </footer>
@@ -341,7 +503,9 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
+    </script>
+
+
 </body>
 
 </html>

@@ -2,7 +2,9 @@ html {
     font-size: 62.5%;
 }
 
-
+body{
+    font-size: 2rem;
+}
 main {
     background: rgb(255, 255, 255);
 }
@@ -16,30 +18,33 @@ a{
     color: black;
 }
 
+img{
+    max-width: 100%;
+}
+
 h1{
     font-size: 4rem;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.7rem;
+}
+h5{
+    font-size: 1.7rem;
 }
 
 p{
     font-size: 1.7rem;
 }
 
-button h4 {
-    font-size: 2rem;
+/* GENERAL */
+.btn{
+    font-size: 1.7rem;
 }
+
+/* FIN GENERAL */
 
 /* NAVBAR */
-.navbar {
-    font-size: 2rem;
-}
-
-.navbar-toggler {
-    font-size: 2rem;
-}
 
 .dropdown-item {
     font-size: 1.6rem;
@@ -101,7 +106,6 @@ button h4 {
 }
 
 .modal-body {
-    font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
@@ -116,9 +120,9 @@ button h4 {
     margin-top: 0.5rem;
 }
 
-.modal-footer button {
+/* .modal-footer button {
     font-size: 2rem;
-}
+} */
 
 #terminos{
     text-decoration: none;
@@ -143,12 +147,11 @@ button h4 {
 
 
 .secciones h2 {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 
 .secciones p {
-    font-size: 2rem;
     line-height: 2;
 }
 
@@ -161,8 +164,7 @@ button h4 {
 }
 
 .imgAside {
-    width: 44rem;
-    height: auto;
+    max-width: 100%;
 }
 
 .videoTrailer{
@@ -192,7 +194,6 @@ button h4 {
 }
 
 .card h5 {
-    font-size: 2rem;
     text-align: center;
 }
 
@@ -244,21 +245,41 @@ button h4 {
 /* Fin Seccion Personaje */
 
 /*MERCHANDISING*/
+.carousel-caption{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 100%);
+    opacity: 80%;
+}
 
-.carousel-item > img{
-    min-height: 81rem;
-    min-width: 81rem;
+.carousel-caption a{
+    font-weight: 900;
+    color: rgb(60, 57, 250);    
+}
+
+.carousel-caption a:hover{
+    font-weight: 900;
+    color: rgb(250, 57, 57);    
+}
+
+.carousel-caption p{
+    font-weight: 700;  
+}
+.carousel-item {
+    width: 100%;
+}
+.carousel-item img{
+    max-width: 100%;
 }
 
 #carouselExampleCaptions {
-    width: 45%;
+    width: 45rem;
     align-self: center;
+    
 }
 
 .carouseltotal{
     padding: 2rem;
     margin: 3rem 2rem;
-    text-align: center
+    text-align: center;
 }
 
 /*FIN DE MERCHANDISING*/
@@ -305,12 +326,59 @@ button h4 {
 
 .page404 button{
     background-color: cornflowerblue;
-    font-size: 2rem;
     font-weight: 700;
     border-radius: 1rem;
 }
 
-
-
-
 /*FIN PAGE 404 */
+
+/* ENCUESTA */
+
+.form-select,
+.form-control{
+    font-size: 1.7rem;
+}
+
+.encuesta legend{
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+/* NOTICIAS */
+
+.filtroNoticia label{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.noticia {
+    color: black;
+}
+.noticia:hover {
+    color: #ee1c25;
+}
+
+#ser:checked~#noticias #pelicula,
+#ser:checked~#noticias #anime,
+#ser:checked~#noticias #videosjuegos {
+    display: none;
+}
+
+#pel:checked~#noticias #serie,
+#pel:checked~#noticias #anime,
+#pel:checked~#noticias #videosjuegos {
+    display: none;
+}
+
+#ani:checked~#noticias #serie,
+#ani:checked~#noticias #pelicula,
+#ani:checked~#noticias #videosjuegos {
+    display: none;
+}
+
+#vid:checked~#noticias #serie,
+#vid:checked~#noticias #pelicula,
+#vid:checked~#noticias #anime {
+    display: none;
+}
+
