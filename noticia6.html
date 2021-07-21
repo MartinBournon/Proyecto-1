@@ -1,253 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>El tren infinito ahora rompe récord como el DVD más vendido en Japón</title>
-        
-        <link rel="icon" type="image/jpg" href="demonslayerlogo.png"></link>
 
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>El tren infinito ahora rompe récord como el DVD más vendido en Japón</title>
+</head>
 
-        <!--link css bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    </head>
-
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Personajes
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
-                          <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
-                          <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
-                          <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
-                      </ul>
-                  </li>
-  
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
-                  </li>
-              </ul>
-              <ul class="navbar-nav mb-lg-0 mr-5 gap-3">
-                  <li class="nav-item">
-                      <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
-                          data-bs-target="#modalLogin">
-                          <h4>Login</h4>
-                      </button>
-                  </li>
-                  <li class="nav-item">
-                      <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
-                          data-bs-target="#modalRegistro">
-                          <h4>Registrarse</h4>
-                      </button>
-                  </li>
-              </ul>
-          </div>
-          <div class="banner">
-              <a href="index.html">
-                  <div id="banner-img"></div>
-              </a>
-          </div>
-      </nav>
-  </header>
-  
-  <main class="contenedor">
-  
-      <div class="modal fade" id="modalLogin" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Login</h5>
-                  </div>
-                  <div class="modal-body">
-                      <form action="">
-                          <div class="d-flex flex-column p-3">
-                              <label class="formModal__label" for="usuario">Usuario</label>
-                              <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
-                              <label class="formModal__label" for="contraseña">Contraseña</label>
-                              <input class="formModal__input" type="password" id="contraseña" name="contraseña" maxlength="16">
-                              <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu contraseña?</a></label>
-                          </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer justify-content-evenly">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Ingresar</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="modal fade" id="modalRegistro" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Registrarse</h5>
-                  </div>
-                  <div class="modal-body">
-                      <form class="formModal" action="">
-                          <div class="d-flex flex-column">
-                              <label class="formModal__label" for="nombre">Nombre</label>
-                              <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
-                              <label class="formModal__label" for="apellido">Apellido</label>
-                              <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30">
-                              <label class="formModal__label" for="email">Email</label>
-                              <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
-                              <label class="formModal__label" for="usuario">Usuario</label>
-                              <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20">
-                              <label class="formModal__label" for="contraseña2">Contraseña</label>
-                              <input class="formModal__input" type="password" id="contraseña2" name="contraseña2" maxlength="16">
-                              <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
-                              <input class="formModal__input" type="password" id="contraseña3" name="contraseña3" maxlength="16">
-                              <div class="d-flex justify-content-evenly align-items-center">
-                                  <input type="checkbox" id="aceptoCond" name="aceptoCond">
-                                  <label class="formModal__label" for="aceptoCond"><a id="terminos" href="page404.html"> Acepto los términos y condiciones</a></label>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer justify-content-evenly">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Registrarse</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-    <body>
-        <!--link Java bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-      
-      <section class="m-5 p-5">
-        <h1>El tren infinito ahora rompe récord como el DVD más vendido en Japón</h1>
-        
-        <h5 class="text-muted">El anime marcó records no solo en la pantalla grande, sino también en la venta en formato físico</h5>
-        <br>          
-        
-        <img src="not6.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
-              
-        <br><br>            
-        
-        <h5 class="text-dark">25 de mayo de 2021</h5>
-            
-        <p>
-            Es cierto que el cine animado tiene un lugar fundamental en la industria del entretenimiento, y es importante reconocer que no siempre la animación va a ser estrictamente un producto infantil. A lo largo de los años diferentes tipos de películas animadas han acaparado la atención de la audiencia y los críticos, y a pesar de que por años Disney ha dominado por la cantidad de ventas, distribución o por generar producciones de manera continua, han llegado otras franquicias a hacerle frente.<br>
-            Hace algunos años, Studio Ghibli comenzó a elevar la atención del público con sus historias tan diferentes a lo que en occidente ya estaban acostumbrados, desde su argumento, la narrativa y el diseño. Con éxitos como Mi Vecino Totoro, El Viaje de Chihiro o El Increíble Castillo Vagabundo, la gente tuvo la oportunidad de probar cosas nuevas. Es importante reconocer que <strong>un par de años atrás, el anime parecía tener un público específico</strong>.<br>
-            El cine animado japonés había acaparado la atención, más no obtenía grandes ingresos debido a que tenía un público bastante definido y, de algún modo, reducido. Sin embargo, con el paso del tiempo su recepción comenzó a abrirse de manera importante. Uno de los elementos que repercuten de algún modo al impacto que se llegue a generar es si tiene o no alguna relación con sus historias en la televisión, si se trata del caso de una franquicia televisada como Dragon Ball Z o Pokémon.<br>                       
-        </p>
-        <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Personajes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
+                        </ul>
+                    </li>
 
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p>Un par de años atrás, el anime parecía tener un público específico</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Crítica de Anmie</cite>
-          </figcaption>
-        </figure>
-        
-        <p>
-            Estas dos franquicias han tenido un notable impacto en su público, pero las cintas no generan algún cambio directo en la trama de las series. Con la llegada de Demon Slayer: El tren infinito, el camino ha sido diferente; también proveniente de una serie de televisión, <strong>esta cinta sí marca momentos importantes entre sus dos temporadas, sobre todo porque los sucesos están en medio de lo que ocurre en ambas </strong>.<br>
-            Esta película rompió varios récords en la taquilla internacional incluso con sus reestrenos, pero ahora que se ha lanzado su versión física en Japón, todo parece indicar que seguirá dando mucho de qué hablar con sus ventas. De acuerdo al informe compartido en Comic Book,<strong> Demon Slayer logró vender 268,000 copias en Blue-Ray y 218,000 en DVD regular tan sólo en el primer día de venta en Japón</strong>; y ya es la película física más vendida en el país hasta el momento.<br>
-            
-            En los países de Occidente se espera que la cinta llegue en DVD, Blu-Ray y quizá en plataformas digitales el <strong>próximo 22 de junio</strong>, y no sería sorpresa que continúe generando importantes ingresos. Hay que reconocer que hoy en día es posible que la venta de películas en su formato físico ya no tenga el mismo impacto de antes debido a la llegada de los servicios de streaming, por eso, el hecho de que esta producción esté generando tantas ventas demuestra que el público quiere mantener cerca a la cinta por mucho tiempo.
-            Demon Slayer: El tren infinito llegó a las salas de cine bajo la dirección de Haruo Sotozaki, respetando la esencia de los personajes y su contexto fantástico, así como el respeto que demuestra al género de la ciencia ficción. Más allá de haberse convertido en un proyecto para fans, otro tipo de público también ha mostrado interés en la misma, lo que sin duda hará llegar nuevos fans para la serie de televisión.
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-lg-0 mr-5 gap-3">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">
+                            Iniciar Sesión
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalRegistro">
+                            Registrarse
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="./index.html">
+                    <div id="banner-img"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-        </p>
-        <br>
+    <main class="contenedor">
 
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p>Demon Slayer: el tren infinito, llegará el próximo 22 de junio</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Crítica de Anmie</cite>
-          </figcaption>
-        </figure>
-        
-                     
-      </section>
-
-      <style> p{
-        font-size: 20px;
-        color: black;
-
-        }
-      </style>
-
-<footer class="page-footer bg-dark text-light">
-    <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
-    <div class="row mt-2">
-    <div class="col-lg-4 text-center mb-3">
-        <h4>Demon Slayer Oficial Page</h4>
-        <div class="p-3">
-            <a target="_blank" href="https://demonslayer-anime.com/">
-                <img class="demon-slayer-logo"
-                    src="IMG/BannerEN.png"
-                    alt="Logo de Demon Slayer" height="70px"></a>
-        </div>
-    </div>
-    <!-- </div> -->
-
-    <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
-    <!-- <div class="row"> -->
-        <div class="col-lg-4 text-center">
-            <h4>Demon Slayer Media Contact</h4>
-            <div class="p-3">
-                <a target="_blank" href="https://www.crunchyroll.com/es">
-                    <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
-                        height="50px"></a>
-                <a target="_blank" href="https://www.netflix.com">
-                    <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
-                <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
-                    <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
-                        height="50px"></a>
+        <div class="modal fade" id="modalLogin" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="d-flex flex-column p-3">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <label class="formModal__label" for="contraseña">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña" name="contraseña"
+                                    maxlength="16">
+                                <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
+                                        contraseña?</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- AQUI ENLACE A SPONSORS DE LA WEB-->
-        <div class="col-lg-4 text-center">
-            <h4>Sponsors</h4>
-            <div class="p-3">
-                <a target="_blank" href="https://rollingcodeschool.com">
-                    <img class="RollingCode-logo"
-                        src="https://rollingcodeschool.com/wp-content/uploads/2020/05/Logo-Completo-BLANCO-RollingoCode.fw_.png"
-                        alt="Logo de RollingCode" height="50px"></a>
+        <div class="modal fade" id="modalRegistro" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrarse</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="formModal" action="">
+                            <div class="d-flex flex-column">
+                                <label class="formModal__label" for="nombre">Nombre</label>
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <label class="formModal__label" for="apellido">Apellido</label>
+                                <input class="formModal__input" type="text" id="apellido" name="apellido"
+                                    maxlength="30">
+                                <label class="formModal__label" for="email">Email</label>
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
+                                    maxlength="20">
+                                <label class="formModal__label" for="contraseña2">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
+                                    maxlength="16">
+                                <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
+                                    maxlength="16">
+                                <div class="d-flex justify-content-evenly align-items-center">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <label class="formModal__label" for="aceptoCond"><a id="terminos"
+                                            href="page404.html"> Acepto los términos y condiciones</a></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Registrarse</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
-    <p id="license" class="text-center footer-license text-light">© 2005-2021 Mozilla and individual contributors. Content is
-        available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
 
 
-</footer>
+        <section class="shadow-lg p-5 mb-5 background container-fluid">
+            <h1 class=" text-center">El tren infinito ahora rompe récord como el DVD más vendido en Japón</h1>
 
-    </body>
+            <h5 class="text-muted text-center">El anime marcó records no solo en la pantalla grande, sino también en la venta en
+                formato físico</h5>
+            <br>
+
+            <img src="img/not6.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
+
+            <br><br>
+
+            <h5 class="text-dark text-center">25 de mayo de 2021</h5>
+
+            <p>
+                Es cierto que el cine animado tiene un lugar fundamental en la industria del entretenimiento, y es
+                importante reconocer que no siempre la animación va a ser estrictamente un producto infantil. A lo largo
+                de los años diferentes tipos de películas animadas han acaparado la atención de la audiencia y los
+                críticos, y a pesar de que por años Disney ha dominado por la cantidad de ventas, distribución o por
+                generar producciones de manera continua, han llegado otras franquicias a hacerle frente.<br>
+                Hace algunos años, Studio Ghibli comenzó a elevar la atención del público con sus historias tan
+                diferentes a lo que en occidente ya estaban acostumbrados, desde su argumento, la narrativa y el diseño.
+                Con éxitos como Mi Vecino Totoro, El Viaje de Chihiro o El Increíble Castillo Vagabundo, la gente tuvo
+                la oportunidad de probar cosas nuevas. Es importante reconocer que <strong>un par de años atrás, el
+                    anime parecía tener un público específico</strong>.<br>
+                El cine animado japonés había acaparado la atención, más no obtenía grandes ingresos debido a que tenía
+                un público bastante definido y, de algún modo, reducido. Sin embargo, con el paso del tiempo su
+                recepción comenzó a abrirse de manera importante. Uno de los elementos que repercuten de algún modo al
+                impacto que se llegue a generar es si tiene o no alguna relación con sus historias en la televisión, si
+                se trata del caso de una franquicia televisada como Dragon Ball Z o Pokémon.<br>
+            </p>
+            <br>
+
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Un par de años atrás, el anime parecía tener un público específico</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">Crítica de Anmie</cite>
+                </figcaption>
+            </figure>
+
+            <p>
+                Estas dos franquicias han tenido un notable impacto en su público, pero las cintas no generan algún
+                cambio directo en la trama de las series. Con la llegada de Demon Slayer: El tren infinito, el camino ha
+                sido diferente; también proveniente de una serie de televisión, <strong>esta cinta sí marca momentos
+                    importantes entre sus dos temporadas, sobre todo porque los sucesos están en medio de lo que ocurre
+                    en ambas </strong>.<br>
+                Esta película rompió varios récords en la taquilla internacional incluso con sus reestrenos, pero ahora
+                que se ha lanzado su versión física en Japón, todo parece indicar que seguirá dando mucho de qué hablar
+                con sus ventas. De acuerdo al informe compartido en Comic Book,<strong> Demon Slayer logró vender
+                    268,000 copias en Blue-Ray y 218,000 en DVD regular tan sólo en el primer día de venta en
+                    Japón</strong>; y ya es la película física más vendida en el país hasta el momento.<br>
+
+                En los países de Occidente se espera que la cinta llegue en DVD, Blu-Ray y quizá en plataformas
+                digitales el <strong>próximo 22 de junio</strong>, y no sería sorpresa que continúe generando
+                importantes ingresos. Hay que reconocer que hoy en día es posible que la venta de películas en su
+                formato físico ya no tenga el mismo impacto de antes debido a la llegada de los servicios de streaming,
+                por eso, el hecho de que esta producción esté generando tantas ventas demuestra que el público quiere
+                mantener cerca a la cinta por mucho tiempo.
+                Demon Slayer: El tren infinito llegó a las salas de cine bajo la dirección de Haruo Sotozaki, respetando
+                la esencia de los personajes y su contexto fantástico, así como el respeto que demuestra al género de la
+                ciencia ficción. Más allá de haberse convertido en un proyecto para fans, otro tipo de público también
+                ha mostrado interés en la misma, lo que sin duda hará llegar nuevos fans para la serie de televisión.
+
+            </p>
+            <br>
+
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Demon Slayer: el tren infinito, llegará el próximo 22 de junio</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">Crítica de Anmie</cite>
+                </figcaption>
+            </figure>
+
+
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
+        <div class="row mt-2">
+            <div class="col-lg-4 text-center mb-3">
+                <h4>Demon Slayer Oficial Page</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://demonslayer-anime.com/">
+                        <img class="demon-slayer-logo" src="IMG/BannerEN.png" alt="Logo de Demon Slayer"
+                            height="70px"></a>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
+            <!-- <div class="row"> -->
+            <div class="col-lg-4 text-center">
+                <h4>Demon Slayer Media Contact</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://www.crunchyroll.com/es">
+                        <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
+                            height="50px"></a>
+                    <a target="_blank" href="https://www.netflix.com">
+                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
+                    <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
+                        <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
+                            height="50px"></a>
+                </div>
+            </div>
+            <!-- AQUI ENLACE A SPONSORS DE LA WEB-->
+            <div class="col-lg-4 text-center">
+                <h4>Sponsors</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://rollingcodeschool.com">
+                        <img class="RollingCode-logo"
+                            src="https://rollingcodeschool.com/wp-content/uploads/2020/05/Logo-Completo-BLANCO-RollingoCode.fw_.png"
+                            alt="Logo de RollingCode" height="50px"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
+        <p id="license" class="text-center footer-license">© 2005-2021 Mozilla and individual contributors. Content
+            is
+            available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.
+        </p>
+
+
+    </footer>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>
