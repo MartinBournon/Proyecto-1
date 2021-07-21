@@ -209,6 +209,7 @@ p{
 
 .tarjeta-globo {
     box-shadow: 0 1rem 3rem 3rem rgba(92, 92, 92, 0.479);
+    border-radius: 100%;
 }
 
 /* FIN SEGUNDA SECTION LANDING */
