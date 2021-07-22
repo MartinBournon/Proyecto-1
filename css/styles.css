@@ -184,8 +184,8 @@ p{
 /* SEGUNDA SECTION LANDING */
 
 
-.card-text {
-    font-size: 1.7rem;
+.card-text p{
+    font-size: 1.6rem;
 }
 
 .card h5 {
