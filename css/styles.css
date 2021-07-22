@@ -359,28 +359,6 @@ p {
     color: #ee1c25;
 }
 
-#ser:checked~#noticias #pelicula,
-#ser:checked~#noticias #anime,
-#ser:checked~#noticias #videosjuegos {
-    display: none;
-}
 
-#pel:checked~#noticias #serie,
-#pel:checked~#noticias #anime,
-#pel:checked~#noticias #videosjuegos {
-    display: none;
-}
-
-#ani:checked~#noticias #serie,
-#ani:checked~#noticias #pelicula,
-#ani:checked~#noticias #videosjuegos {
-    display: none;
-}
-
-#vid:checked~#noticias #serie,
-#vid:checked~#noticias #pelicula,
-#vid:checked~#noticias #anime {
-    display: none;
-}
 
 /* FIN NOTICIAS */
