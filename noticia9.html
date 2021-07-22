@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Personajes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="personajes.html#principales">Principales</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#pilares">Pilares</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#secundarios">Secundarios</a></li>
+                            <li><a class="dropdown-item" href="personajes.html#demonios">Demonios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="merchandising.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="encuesta.html">Encuesta</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-lg-0 mr-5 gap-3">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">
+                            Iniciar Sesión
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light mt-3 mt-xl-0 " data-bs-toggle="modal"
+                            data-bs-target="#modalRegistro">
+                            Registrarse
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="./index.html">
+                    <div id="banner-img"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <div class="modal fade" id="modalLogin" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="d-flex flex-column p-3">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <label class="formModal__label" for="contraseña">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña" name="contraseña"
+                                    maxlength="16">
+                                <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
+                                        contraseña?</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalRegistro" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrarse</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="formModal" action="">
+                            <div class="d-flex flex-column">
+                                <label class="formModal__label" for="nombre">Nombre</label>
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <label class="formModal__label" for="apellido">Apellido</label>
+                                <input class="formModal__input" type="text" id="apellido" name="apellido"
+                                    maxlength="30">
+                                <label class="formModal__label" for="email">Email</label>
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <label class="formModal__label" for="usuario">Usuario</label>
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
+                                    maxlength="20">
+                                <label class="formModal__label" for="contraseña2">Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
+                                    maxlength="16">
+                                <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
+                                <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
+                                    maxlength="16">
+                                <div class="d-flex justify-content-evenly align-items-center">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <label class="formModal__label" for="aceptoCond"><a id="terminos"
+                                            href="page404.html"> Acepto los términos y condiciones</a></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-evenly">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="shadow-lg p-5 mb-5 background container-fluid">
+            <h1 class=" text-center">7 series parecidas a Demon Slayer para ver en Netflix y Crunchyroll</h1>
+
+            <h5 class="text-muted text-center">Para seguir en la misma línea, aquí te presentamos algunas propuestas similares
+                ¡Imperdible!</h5>
+            <br>
+
+            <img src="img/not9.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
+
+            <br><br>
+
+            <h5 class="text-dark text-center">2 de mayo de 2021</h5>
+
+            <p>
+                Demon Slayer: Kimetsu no Yaiba se ha convertudo en uno de los grandes sucesos del animé en el último
+                tiempo, ya que su serie ha llevado a hacer la película del arco del Tren Infinito, la cual es un
+                verdadero éxito en todo el mundo. Es por eso que no puedes perderte este show animado, así como también
+                el siguiente listado con algunas propuestas parecidas que encontrarás en los servicios de streaming de
+                Netflix y Crunchyroll. ¡Ideal para cualquier fanático!
+
+            </p>
+            <br>
+
+            <br>
+            <h3>7. Blood Blockade Battlefront</h3>
+            <p>
+                Año: 2015<br>
+                Creado por: Yasuhiro Nightow<br>
+                Trama: Cuando en Nueva York se abre una brecha dimensional que conecta nuestro mundo con el otro lado,
+                la ciudad queda envuelta por una densa niebla que la cambia para siempre. Ahora la ciudad es conocida
+                como Hellsalem's Lot, un lugar donde seres extraños y humanos de todo tipo conviven y sobreviven como
+                pueden en sus peligrosas calles. Hasta allí llegará Leonardo, un joven que busca ayudar a su hermana y
+                que acabará involucrado con la organización de superhumanos conocida como Libra.<br>
+                Disponible en: Crunchyroll
+
+            </p>
+            <br>
+
+            <h3>6. The Seven Deadly Sins: La Ira Imperial de los dioses</h3>
+            <p>
+                Año: 2019<br>
+                Creado por: Nakaba Suzuki<br>
+                Trama: Un grupo de tiranos tomó el trono. Ahora la princesa deberá buscar a un grupo de caballeros que
+                la ayude a recuperar el reino.<br>
+                Disponible en: Netflix<br>
+
+            </p>
+            <br>
+
+            <h3>5. Fate/Stay Night</h3>
+            <p>
+                Año: 2006 <br>
+                Creado por: Ninoko Nasu<br>
+                Trama: La ciudad de Furyuki, rodeada por el océano y las montañas, se convierte en el lugar donde se
+                llevará a cabo un antiguo ritual. Para materializar el mítico Santo Grial, del cual se dice que
+                concederá cualquier deseo a su poseedor, siete Masters recibien sietes espíritus heroicos escogidos por
+                el grial... Estos Masters formarán un pacto con sus Servants y lucharán entre sí a muerte hasta que solo
+                quede una pareja... Es la "Guerra del Santo Grial".<br>
+                Disponible en: Crunchyroll
+
+            </p>
+            <br>
+
+            <h3>4. Invasión en las alturas</h3>
+            <p>
+                Año: 2021<br>
+                Creado por: Tsuina Miura<br>
+                Trama: La joven Yuri se encuentra en la cima de un rascacielos en un mundo extraño, donde debe
+                sobrevivir los embates de atacantes enmascarados que buscan matar a sus presas.<br>
+                Disponible en: Netflix
+
+            </p>
+            <br>
+
+            <h3>3. Noblesse</h3>
+            <p>
+                Año: 2020<br>
+                Creado por: Son Jae-Ho<br>
+                Trama: Raizel despierta tras un letargo de 820 años. Ostenta el título de Noblesse, un Noble de pura
+                sangre y protector del resto de Nobles. En un intento por proteger a Raizel, su sirviente Frankenstein
+                se une a él en el Instituto Ye Ran, donde Raizel se acostumbra poco a poco a la rutina cotidiana del
+                mundo humano junto a sus compañeros. Sin embargo, los humanos modificados de la Unión, una sociedad
+                secreta que planea conquistar el mundo, entran poco a poco en la vida de Raizel y amenazan a sus seres
+                queridos, obligándolo a usar su gran poder para protegerlos.<br>
+                Disponible en: Crunchyroll
+
+            </p>
+            <br>
+
+            <h3>2. Jojo's Bizarre Adventure</h3>
+            <p>
+                Año: 2012<br>
+                Creado por: Hirohiko Araki<br>
+                Trama: Varias generaciones de la familia Joestar (todos con el mismo sobrenombre) se enfrentan a
+                villanos sobrenaturales en diferentes épocas.<br>
+                Disponible en: Netflix
+
+            </p>
+            <br>
+
+            <h3>1. Shingeki no Kyojin/Attack on Titan</h3>
+            <p>
+                Año: 2013<br>
+                Creado por: Hajime Isayama<br>
+                Trama: Muchos años atrás, la humanidad estuvo al borde de la extinción con la aparición de unas
+                criaturas gigantes que devoraban a todas las personas. Huyendo, la humanidad consiguió sobrevivir en una
+                ciudad fortificada de altas murallas que se ha convertido en el último reducto de la civilización contra
+                los Titanes que campan a sus anchas por el mundo. Ahora esa paz está a punto de verse interrumpida por
+                una cadena de acontecimientos que llevará a desvelar qué son los Titanes y cómo aparecieron.<br>
+                Disponible en: Crunchyroll
+
+            </p>
+            <br>
+
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <!-- AQUI ENLACE OFICIAL A LA PAGINA DE DEMON SLAYER-->
+        <div class="row mt-2">
+            <div class="col-lg-4 text-center mb-3">
+                <h4>Demon Slayer Oficial Page</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://demonslayer-anime.com/">
+                        <img class="demon-slayer-logo" src="IMG/BannerEN.png" alt="Logo de Demon Slayer"
+                            height="70px"></a>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
+            <!-- <div class="row"> -->
+            <div class="col-lg-4 text-center">
+                <h4>Demon Slayer Media Contact</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://www.crunchyroll.com/es">
+                        <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
+                            height="50px"></a>
+                    <a target="_blank" href="https://www.netflix.com">
+                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix"
+                            height="50px"></a>
+                    <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
+                        <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
+                            height="50px"></a>
+                </div>
+            </div>
+            <!-- AQUI ENLACE A SPONSORS DE LA WEB-->
+            <div class="col-lg-4 text-center">
+                <h4>Sponsors</h4>
+                <div class="p-3">
+                    <a target="_blank" href="https://rollingcodeschool.com">
+                        <img class="RollingCode-logo"
+                            src="https://rollingcodeschool.com/wp-content/uploads/2020/05/Logo-Completo-BLANCO-RollingoCode.fw_.png"
+                            alt="Logo de RollingCode" height="50px"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
+        <p id="license" class="text-center footer-license">© 2005-2021 Mozilla and individual contributors. Content
+            is
+            available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.
+        </p>
+
+
+    </footer>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
