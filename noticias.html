@@ -10,31 +10,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Noticias - Demon Slayer</title>
 
-    <style>
-        #ser:checked~#noticias #pelicula,
-        #ser:checked~#noticias #anime,
-        #ser:checked~#noticias #videosjuegos {
-            display: none;
-        }
-
-        #pel:checked~#noticias #serie,
-        #pel:checked~#noticias #anime,
-        #pel:checked~#noticias #videosjuegos {
-            display: none;
-        }
-
-        #ani:checked~#noticias #serie,
-        #ani:checked~#noticias #pelicula,
-        #ani:checked~#noticias #videosjuegos {
-            display: none;
-        }
-
-        #vid:checked~#noticias #serie,
-        #vid:checked~#noticias #pelicula,
-        #vid:checked~#noticias #anime {
-            display: none;
-        }
-    </style>
 </head>
 
 
@@ -173,18 +148,6 @@
         </div>
 
         <section class="shadow-lg p-5 mb-5 background container-fluid p-3 text-center">
-            <div class="filtroNoticia">
-                <input type="radio" name="filtro" id="todo">
-                <label for="todo" class="h5">Últimas</label>
-                <input type="radio" name="filtro" id="ser">
-                <label for="ser" class="h5">Serie</label>
-                <input type="radio" name="filtro" id="pel">
-                <label for="pel" class="h5">Película</label>
-                <input type="radio" name="filtro" id="ani">
-                <label for="ani" class="h5">Anime</label>
-                <input type="radio" name="filtro" id="vid">
-                <label for="vid" class="h5">Videos Juegos</label>
-            </div>
 
 
             <div id="noticias">
