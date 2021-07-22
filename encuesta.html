@@ -88,7 +88,7 @@
               <legend>Datos de contacto</legend>
               <div class="col-sm-12 col-md-2 ">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" maxlength="20" class="form-control" id="nombre" name="nombre" required>
+                <input type="text" maxlength="20" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
               </div>
               <div class="col-sm-12 col-md-1 ">
                 <label for="edad" class="form-label">Edad</label>
@@ -345,12 +345,12 @@
               </div>
               <div class="col-sm-12 col-md-3 ">
                 <label for="ciudad" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                <input type="text" maxlength="30" class="form-control" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
               </div>
               <div class="col-sm-12 col-md-3">
                 <label for="email" class="form-label">Email</label>
                 <div class="input-group has-validation">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com"
+                  <input type="email" class="form-control" id="email" name="email" maxlength="40" placeholder="nombre@ejemplo.com"
                     required>
                 </div>
               </div>
@@ -387,10 +387,11 @@
               <label class="form-check-label" for="radioAnimeOp5">Muy Bueno</label>
             </div>
           </fieldset>
+          
           <fieldset>
             <legend>¿Cuál es tu capítulo favorito?</legend>
-            <select class="form-select" aria-label="Default select example" ar>
-              <option selected>Capítulos</option>
+            <select class="form-select" aria-label="Default select example" required ar>
+              <option selected disabled>Capítulos</option>
               <option value="1">1 - Crueldad</option>
               <option value="2">2 - El instructor, Sakonji Urokodaki</option>
               <option value="3">3 - Sabito y Mokomo</option>
