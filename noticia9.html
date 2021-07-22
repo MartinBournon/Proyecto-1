@@ -75,7 +75,6 @@
     </header>
 
     <main class="contenedor">
-
         <div class="modal fade" id="modalLogin" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -86,10 +85,11 @@
                         <form action="">
                             <div class="d-flex flex-column p-3">
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña" name="contraseña"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
                                         contraseña?</a></label>
                             </div>
@@ -112,25 +112,28 @@
                         <form class="formModal" action="">
                             <div class="d-flex flex-column">
                                 <label class="formModal__label" for="nombre">Nombre</label>
-                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="apellido">Apellido</label>
-                                <input class="formModal__input" type="text" id="apellido" name="apellido"
-                                    maxlength="30">
+                                <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="email">Email</label>
-                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45"
+                                    required>
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
-                                    maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña2">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <div class="d-flex justify-content-evenly align-items-center">
-                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond" required>
                                     <label class="formModal__label" for="aceptoCond"><a id="terminos"
-                                            href="page404.html"> Acepto los términos y condiciones</a></label>
+                                            href="page404.html"> Acepto los
+                                            términos y condiciones</a></label>
                                 </div>
                             </div>
                         </form>
@@ -142,7 +145,6 @@
                 </div>
             </div>
         </div>
-
 
         <section class="shadow-lg p-5 mb-5 background container-fluid">
             <h1 class=" text-center">7 series parecidas a Demon Slayer para ver en Netflix y Crunchyroll</h1>

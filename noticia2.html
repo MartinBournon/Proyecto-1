@@ -76,7 +76,6 @@
     </header>
 
     <main class="contenedor">
-
         <div class="modal fade" id="modalLogin" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -87,10 +86,11 @@
                         <form action="">
                             <div class="d-flex flex-column p-3">
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña" name="contraseña"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
                                         contraseña?</a></label>
                             </div>
@@ -113,25 +113,28 @@
                         <form class="formModal" action="">
                             <div class="d-flex flex-column">
                                 <label class="formModal__label" for="nombre">Nombre</label>
-                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="apellido">Apellido</label>
-                                <input class="formModal__input" type="text" id="apellido" name="apellido"
-                                    maxlength="30">
+                                <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="email">Email</label>
-                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45"
+                                    required>
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
-                                    maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña2">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <div class="d-flex justify-content-evenly align-items-center">
-                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond" required>
                                     <label class="formModal__label" for="aceptoCond"><a id="terminos"
-                                            href="page404.html"> Acepto los términos y condiciones</a></label>
+                                            href="page404.html"> Acepto los
+                                            términos y condiciones</a></label>
                                 </div>
                             </div>
                         </form>
@@ -143,20 +146,15 @@
                 </div>
             </div>
         </div>
-
         <section class="shadow-lg p-5 mb-5 background container-fluid">
             <h1 class=" text-center">Demon Slayer: ¿Qué esperar de la segunda temporada?</h1>
-
-            <h5 class="text-muted  text-center">'Demon Slayer' (Kimetsu no Yaiba) tendrá segunda temporada. Acá tienes todo lo que
+            <h5 class="text-muted  text-center">'Demon Slayer' (Kimetsu no Yaiba) tendrá segunda temporada. Acá tienes
+                todo lo que
                 sabemos de ella sin spoilers, antes del próximo estreno.</h5>
             <br>
-
             <img src="img/not2.jpg" width="60%" class="img-fluid rounded mx-auto d-block" alt="Imagen del videojuego">
-
             <br><br>
-
             <h5 class="text-dark  text-center">14 de junio de 2021</h5>
-
             <p>
                 Demon Slayer (Kimetsu no Yaiba) <strong> sacudió la plataforma de Netflix </strong>. Lo hizo en 2019 y
                 2020, años durante los cuales se asentó dentro del servicio. Eso propició que quienes fueran ajenos al
@@ -265,8 +263,7 @@
                         <img class="crunchyroll-logo" src="IMG/crunchyroll_logo.png" alt="Logo de Crunchyroll"
                             height="50px"></a>
                     <a target="_blank" href="https://www.netflix.com">
-                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix"
-                            height="50px"></a>
+                        <img class="Netflix-logo" src="IMG/netflix_logo.png" alt="Logo de Netflix" height="50px"></a>
                     <a target="_blank" href="https://www.instagram.com/kimetsunoyaiiba/">
                         <img class="Instagram-logo" src="IMG/instagram_logo.png" alt="Logo de Instagram"
                             height="50px"></a>
@@ -292,8 +289,8 @@
 
 
     </footer>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 </body>
