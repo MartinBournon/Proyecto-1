@@ -75,11 +75,6 @@ p{
 
 /* FIN NAVBAR */
 
-.marcoFoto {
-    max-width: 30rem;
-    text-align: center;
-}
-
 /*** MAIN ***/
 .contenedor {
     margin: 10rem auto;
@@ -207,9 +202,14 @@ p{
     font-size: 4rem;
 }
 
-.tarjeta-globo {
+.marcoFoto {
+    margin: 2rem 0;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.marcoFoto__img {
     box-shadow: 0 1rem 3rem 3rem rgba(92, 92, 92, 0.479);
-    border-radius: 100%;
 }
 
 /* FIN SEGUNDA SECTION LANDING */
