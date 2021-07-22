@@ -155,6 +155,8 @@
             </div>
         </div>
 
+        <!--Empieza el filtro-->
+
         <section id="noticias" class="shadow-lg p-5 mb-5 background container-fluid p-3 text-center">
             <div class="filtroNoticia">
                 <input type="radio" name="filtro" id="todo">
@@ -167,67 +169,101 @@
                 <label for="ani" class="h5">Anime</label>
                 <input type="radio" name="filtro" id="vid">
                 <label for="vid" class="h5">Videos Juegos</label>
-            </div>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 m-5 ">
+                <style> 
+                    #ser:checked ~ #noticias #pelicula,
+                    #ser:checked ~ #noticias #anime,
+                    #ser:checked ~ #noticias #videosjuegos{
+                    display:none;
+                    }
+                </style>
+        
+                <style> 
+                    #pel:checked ~ #noticias #serie,
+                    #pel:checked ~ #noticias #anime,
+                    #pel:checked ~ #noticias #videosjuegos{
+                    display:none;
+                    }
+                </style>
+            
+                <style> 
+                    #ani:checked ~ #noticias #serie,
+                    #ani:checked ~ #noticias #pelicula,
+                    #ani:checked ~ #noticias #videosjuegos{
+                    display:none;
+                    }
+                </style>
+        
+                <style> 
+                    #vid:checked ~ #noticias #serie,
+                    #vid:checked ~ #noticias #pelicula,
+                    #vid:checked ~ #noticias #anime{
+                    display:none;
+                    }
+                </style>         
+            
+            <!--Termina el filtro-->
 
-                <div class="col" id="serie" name="serie">
-                    <div class="card text-start">
-                        <a href="noticia13.html" target="_blank">
-                            <img src="img/not13.jpg" class="card-img-top" alt="Imagen de Netflix">
-                        </a>
-                        <div class="card-body">
-                            <a href="noticia13.html" id="linknot1" target="_blank" style="text-decoration: none;">
-                                <h5 class="noticia card-title">Netflix: ¿Cuál es la crítica de 'Demon Slayer'?</h5>
+            <div id="noticias">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 m-5 ">
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia13.html" target="_blank">
+                                <img src="img/not13.jpg" class="card-img-top" alt="Imagen de Netflix">
                             </a>
-                            <p class="card-text">¿Es tan buena como se cree? Acá la posición de los críticos sobre
-                                la serie.</p>
+                            <div class="card-body">
+                                <a href="noticia13.html" id="linknot1" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Netflix: ¿Cuál es la crítica de 'Demon Slayer'?</h5>
+                                </a>
+                                <p class="card-text">¿Es tan buena como se cree? Acá la posición de los críticos sobre
+                                    la serie.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">20 de Marzo de 2021</small>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">20 de Marzo de 2021</small>
+                    </div>
+
+                    <div class="col" id="anime" name="anime">
+                        <div class="card text-start">
+                            <a href="noticia14.html" target="_blank">
+                                <img src="img/not14.jpg" class="card-img-top" alt="Imagen de Anime">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia14.html" id="linknot2" target="_blank" style="text-decoration: none;">
+                                    <h5 class="noticia card-title">Eligen al mejor animé de la historia y este es el
+                                        resultado
+                                    </h5>
+                                </a>
+                                <p class="card-text">Una pista, no es ni Shingeki no Kyojin ni One Piece...</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">14 de Marzo de 2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="serie" name="serie">
+                        <div class="card text-start">
+                            <a href="noticia15.html" target="_blank">
+                                <img src="img/not15.jpg" class="card-img-top" alt="Imagen de 5 razones">
+                            </a>
+                            <div class="card-body">
+                                <a href="noticia15.html" id="linknot3" target="_blank" style="text-decoration: none;">
+                                    <h5 class="card-title">5 razones para ver el animé “Demon Slayer: Kimetsu no Yaiba”
+                                    </h5>
+                                </a>
+                                <p class="noticia card-text">5 razones para ver el animé “Demon Slayer: Kimetsu no Yaiba”
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">9 de Marzo de 2021</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col" id="anime" name="anime">
-                    <div class="card text-start">
-                        <a href="noticia14.html" target="_blank">
-                            <img src="img/not14.jpg" class="card-img-top" alt="Imagen de Anime">
-                        </a>
-                        <div class="card-body">
-                            <a href="noticia14.html" id="linknot2" target="_blank" style="text-decoration: none;">
-                                <h5 class="noticia card-title">Eligen al mejor animé de la historia y este es el
-                                    resultado
-                                </h5>
-                            </a>
-                            <p class="card-text">Una pista, no es ni Shingeki no Kyojin ni One Piece...</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">14 de Marzo de 2021</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col" id="serie" name="serie">
-                    <div class="card text-start">
-                        <a href="noticia15.html" target="_blank">
-                            <img src="img/not15.jpg" class="card-img-top" alt="Imagen de 5 razones">
-                        </a>
-                        <div class="card-body">
-                            <a href="noticia15.html" id="linknot3" target="_blank" style="text-decoration: none;">
-                                <h5 class="card-title">5 razones para ver el animé “Demon Slayer: Kimetsu no Yaiba”
-                                </h5>
-                            </a>
-                            <p class="noticia card-text">5 razones para ver el animé “Demon Slayer: Kimetsu no Yaiba”
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">9 de Marzo de 2021</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </div>    
         </section>
 
 
