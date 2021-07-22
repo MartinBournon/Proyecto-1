@@ -87,14 +87,14 @@
             <div class="row g-2">
               <legend>Datos de contacto</legend>
               <div class="col-sm-12 col-md-2 ">
-                <label for="nombre" class="__label form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" maxlength="20" class="form-control" id="nombre" name="nombre" required>
               </div>
               <div class="col-sm-12 col-md-1 ">
                 <label for="edad" class="form-label">Edad</label>
-                <input type="text" class="form-control" id="edad" name="edad" novalidate>
+                <input type="number" min="12" max="99" class="form-control" id="edad" name="edad" novalidate>
               </div>
-              <div class="col-sm-12 col-md-3 datosContactos">
+              <div class="col-sm-12 col-md-3">
                 <label for="pais" class="form-label">País</label>
                 <select class="form-select" aria-label="Default select example" ar>
                   <option disabled selected value="Elegir" id="AF">Elegir opción</option>
