@@ -11,7 +11,6 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Kimetsu no Yaiba FanPage</title>
-
 </head>
 
 <body>
@@ -76,9 +75,7 @@
             </div>
         </nav>
     </header>
-
     <main class="contenedor">
-
         <div class="modal fade" id="modalLogin" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -89,10 +86,11 @@
                         <form action="">
                             <div class="d-flex flex-column p-3">
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario" name="usuario" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña" name="contraseña"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label for=""><a target="_blank" href="page404.html">¿Olvidaste tu
                                         contraseña?</a></label>
                             </div>
@@ -115,25 +113,28 @@
                         <form class="formModal" action="">
                             <div class="d-flex flex-column">
                                 <label class="formModal__label" for="nombre">Nombre</label>
-                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30">
+                                <input class="formModal__input" type="text" id="nombre" name="nombre" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="apellido">Apellido</label>
-                                <input class="formModal__input" type="text" id="apellido" name="apellido"
-                                    maxlength="30">
+                                <input class="formModal__input" type="text" id="apellido" name="apellido" maxlength="30"
+                                    required>
                                 <label class="formModal__label" for="email">Email</label>
-                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45">
+                                <input class="formModal__input" type="email" id="email" name="email" maxlength="45"
+                                    required>
                                 <label class="formModal__label" for="usuario">Usuario</label>
-                                <input class="formModal__input" type="text" id="usuario2" name="usuario2"
-                                    maxlength="20">
+                                <input class="formModal__input" type="text" id="usuario2" name="usuario2" maxlength="20"
+                                    required>
                                 <label class="formModal__label" for="contraseña2">Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña2" name="contraseña2"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <label class="formModal__label" for="contraseña3">Repetir Contraseña</label>
                                 <input class="formModal__input" type="password" id="contraseña3" name="contraseña3"
-                                    maxlength="16">
+                                    maxlength="16" required>
                                 <div class="d-flex justify-content-evenly align-items-center">
-                                    <input type="checkbox" id="aceptoCond" name="aceptoCond">
+                                    <input type="checkbox" id="aceptoCond" name="aceptoCond" required>
                                     <label class="formModal__label" for="aceptoCond"><a id="terminos"
-                                            href="page404.html"> Acepto los términos y condiciones</a></label>
+                                            href="page404.html"> Acepto los
+                                            términos y condiciones</a></label>
                                 </div>
                             </div>
                         </form>
@@ -145,7 +146,6 @@
                 </div>
             </div>
         </div>
-
         <div class="mb-4 d-flex flex-row-reverse justify-content-between">
             <div class="shadow-lg background container-fluid  mb-5 p-3">
                 <section class="secciones">
@@ -185,7 +185,7 @@
                     <div class="card bg-transparent border-0 mb-3 col-sm-12">
                         <div class="row g-0 justify-content-center align-items-center">
                             <div class="col-sm-12 marcoFoto">
-                                <img src="./img/autora.png" class=" img-fluid rounded-circle" alt="...">
+                                <img src="./img/autora.png" class=" img-fluid rounded-circle" alt="Imagen Autora">
                             </div>
                             <div class="col-sm-12 pieFotoAutora">
                                 <div class="card-body m-0">
@@ -223,8 +223,8 @@
                 </section>
             </div>
             <aside class="d-none d-xl-flex flex-column justify-content-xl-around align-items-xl-center">
-                <img class="imgAside" src="./img/tanjiroAside.png" alt="">
-                <img class="imgAside" src="./img/rengoku.png" alt="">
+                <img class="imgAside" src="./img/tanjiroAside.png" alt="Imagen Aside 1">
+                <img class="imgAside" src="./img/rengoku.png" alt="Imagen Aside 2">
             </aside>
         </div>
         <section class="container-fluid background shadow-lg p-5 ">
@@ -233,13 +233,12 @@
                 Somos un grupo de estudiantes de desarrollo web fullstack y fans de Kimetsu no Yaiba y creamos el
                 sitio para compartir con el mundo todo acerca de nuestra serie de animé favorita
             </p>
-
             <div class="row justify-content-lg-evenly">
                 <div class="card bg-transparent border-0 mb-3 col-xl-4 col-sm-12">
                     <div class="row g-0 justify-content-center align-items-center">
                         <div class="col-md-4 col-xl-12 marcoFoto">
                             <img src="./img/dianaabascal.jpeg" class="marcoFoto__img img-fluid rounded-circle"
-                                alt="...">
+                                alt="Imagen Diana Abascal">
                         </div>
                         <div class="col-md-8 col-xl-12">
                             <div class="card-body">
@@ -254,7 +253,7 @@
                 <div class="card bg-transparent border-0 mb-3 col-xl-4 col-sm-12">
                     <div class="row g-0 justify-content-center align-items-center">
                         <div class="col-md-4 col-xl-12 marcoFoto">
-                            <img src="./img/gabrielblanche.jpeg" class="marcoFoto__img img-fluid rounded-circle" alt="...">
+                            <img src="./img/gabrielblanche.jpeg" class="marcoFoto__img img-fluid rounded-circle" alt="Imagen Gabriel Blanche">
                         </div>
                         <div class="col-md-8 col-xl-12">
                             <div class="card-body">
@@ -269,7 +268,7 @@
                 <div class="card bg-transparent border-0 mb-3 col-xl-4 col-md-12 col-sm-12" ">
                     <div class=" row g-0 justify-content-center align-items-center">
                     <div class="col-md-4 col-xl-12 marcoFoto">
-                        <img src="./img/martinbournon.jpeg" class="marcoFoto__img img-fluid rounded-circle" alt="...">
+                        <img src="./img/martinbournon.jpeg" class="marcoFoto__img img-fluid rounded-circle" alt="Imagen MartinBournon">
                     </div>
                     <div class="col-md-8 col-xl-12">
                         <div class="card-body">
@@ -277,9 +276,6 @@
                             <p class="card-text">
                                 Ingeniero en Sistemas, loco por los autos, amante de la naturaleza,
                                 adoro los animales pero especialmente los felinos.
-
-
-
                             </p>
                         </div>
                     </div>
@@ -290,7 +286,7 @@
                 <div class="card bg-transparent border-0 mb-3 col-xl-4 col-md-12 col-sm-12" ">
                     <div class=" row g-0 justify-content-center align-items-center">
                     <div class="col-md-4 col-xl-12 marcoFoto">
-                        <img src="./img/exemolina.jpg" class="marcoFoto__img img-fluid rounded-circle" alt="...">
+                        <img src="./img/exemolina.jpg" class="marcoFoto__img img-fluid rounded-circle" alt="Imagen Exe Molina">
                     </div>
                     <div class="col-md-8 col-xl-12">
                         <div class="card-body">
@@ -306,7 +302,7 @@
             <div class="card bg-transparent border-0 mb-3 col-xl-4 col-md-12 col-sm-12">
                 <div class="row g-0 justify-content-center align-items-center">
                     <div class="col-md-4 col-xl-12 marcoFoto">
-                        <img src="./img/nicorecio.jpg" class="marcoFoto__img img-fluid rounded-circle" alt="...">
+                        <img src="./img/nicorecio.jpg" class="marcoFoto__img img-fluid rounded-circle" alt="Imagen Nico Recio">
                     </div>
                     <div class="col-md-8 col-xl-12">
                         <div class="card-body">
@@ -332,10 +328,7 @@
                             height="70px"></a>
                 </div>
             </div>
-            <!-- </div> -->
-
             <!-- AQUI ENLACE A PAGINAS DE VISUALIZACION Y MEDIA DE DEMON SLAYER-->
-            <!-- <div class="row"> -->
             <div class="col-lg-4 text-center">
                 <h4>Demon Slayer Media Contact</h4>
                 <div class="p-3">
@@ -360,18 +353,10 @@
                 </div>
             </div>
         </div>
-
         <!-- AQUI LICENCIA Y SEGURIDAD DE LA PAGINA-->
         <p id="license" class="text-center footer-license">© 2005-2021 Mozilla and individual contributors. Content is
             available under <a target="_blank" href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
-
-
     </footer>
-
-
-
-
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
